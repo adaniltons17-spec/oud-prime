@@ -1,27 +1,21 @@
 {
-  "id": "/controle-agua/",
-  "name": "OUD PRIME - Controle de Água",
+  "name": "OUD PRIME - Sistemas Inteligentes",
   "short_name": "OUD PRIME",
-  "description": "Sistemas Inteligentes para o seu dia a dia - Controle de Água e Alojamentos",
+  "description": "Engenharia de Software e Sistemas Inteligentes Corporativos",
   "start_url": "./index.html",
-  "scope": "./",
   "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#0b0f19",
+  "background_color": "#0f172a",
   "theme_color": "#0f172a",
-  "categories": ["business", "utilities"],
   "icons": [
     {
       "src": "logo.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     },
     {
       "src": "logo.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     }
   ]
 }
