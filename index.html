@@ -1456,14 +1456,14 @@
             'Alojamento 03': ['Módulo 01', 'Módulo 02', 'Módulo 03', 'Módulo 04', 'Módulo 05', 'Módulo 06', 'Módulo 07', 'Módulo 08', 'Módulo 09', 'Área de Vivência', 'Refeitório', 'Ambulatório', 'Sala de Manutenção']
         };
 
-        let systemConfig = {
-            efetivo: 500,
-            meta: 2.7,
-            volumeGalao: 20,
-            estoqueInicial: { 'Site': 0, 'Alojamento 01': 0, 'Alojamento 03': 0 },
-            estoqueInicialVazios: { 'Site': 0, 'Alojamento 01': 0, 'Alojamento 03': 0 },
-            estoqueMinimo: { 'Site': 300, 'Alojamento 01': 200, 'Alojamento 03': 200 }
-        };
+       systemConfig = {
+  efetivo: 0,
+  meta: 0,
+  volumeGalao: 0,
+  estoqueInicial: { 'Site': 0, 'Alojamento 01': 0, 'Alojamento 03': 0 },
+  estoqueInicialVazios: { 'Site': 0, 'Alojamento 01': 0, 'Alojamento 03': 0 },
+  estoqueMinimo: { 'Site': 0, 'Alojamento 01': 0, 'Alojamento 03': 0 }
+}
 
         let chartDiario, chartLocal, chartEntradasDev, chartMensal;
         let notifiedCriticalLocs = new Set();
