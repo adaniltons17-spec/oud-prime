@@ -2,21 +2,26 @@
   "id": "/oud-prime/",
   "name": "OUD PRIME - Sistemas Inteligentes",
   "short_name": "OUD PRIME",
-  "description": "Engenharia de Software e Sistemas Inteligentes Corporativos",
+  "description": "Engenharia de Software e Ecossistemas Digitais Inteligentes para Gestão Operacional",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#0f172a",
   "theme_color": "#0f172a",
+  "categories": ["business", "productivity", "utilities"],
   "icons": [
     {
       "src": "logo.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "logo.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
