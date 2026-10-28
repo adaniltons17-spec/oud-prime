@@ -1,4 +1,4 @@
-const CACHE_NAME = 'oud-prime-v1';
+const CACHE_NAME = 'oud-prime-app-v1';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -15,9 +15,9 @@ const ASSETS_TO_CACHE = [
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
-      console.log('[SW] Salvando recursos para uso offline...');
+      console.log('[SW OUD PRIME] Salvando recursos para uso offline...');
       return cache.addAll(ASSETS_TO_CACHE).catch(err => {
-        console.warn('[SW] Falha parcial ao armazenar assets em cache:', err);
+        console.warn('[SW OUD PRIME] Falha parcial ao armazenar assets em cache:', err);
       });
     }).then(() => self.skipWaiting())
   );
@@ -30,7 +30,7 @@ self.addEventListener('activate', event => {
       return Promise.all(
         cacheNames.map(cache => {
           if (cache !== CACHE_NAME) {
-            console.log('[SW] Apagando cache antigo:', cache);
+            console.log('[SW OUD PRIME] Apagando cache antigo:', cache);
             return caches.delete(cache);
           }
         })
@@ -41,16 +41,16 @@ self.addEventListener('activate', event => {
 
 // Estratégia de busca: Tenta a rede primeiro. Se estiver offline, entrega o Cache
 self.addEventListener('fetch', event => {
-  // Ignora requisições para o Google Apps Script (essas devem ser tratadas pelo app no formato offline queue)
-  if (event.request.url.includes('script.google.com')) {
+  // Ignora requisições para APIs externas (ex: Google Apps Script) para não interferir na fila offline
+  if (event.request.url.includes('script.google.com') || !event.request.url.startsWith('http')) {
     return;
   }
 
   event.respondWith(
     fetch(event.request)
       .then(networkResponse => {
-        // Se a requisição foi bem sucedida, atualiza uma cópia no cache
-        if (networkResponse && networkResponse.status === 200 && event.request.method === 'GET') {
+        // Aceita respostas normais (200) e opacas (0 - vindas de CDNs externas)
+        if (networkResponse && (networkResponse.status === 200 || networkResponse.status === 0) && event.request.method === 'GET') {
           const responseClone = networkResponse.clone();
           caches.open(CACHE_NAME).then(cache => {
             cache.put(event.request, responseClone);
@@ -59,12 +59,12 @@ self.addEventListener('fetch', event => {
         return networkResponse;
       })
       .catch(() => {
-        // Se falhar (offline), busca no cache do aparelho
+        // Se estiver offline, recupera o recurso do cache do dispositivo
         return caches.match(event.request).then(cachedResponse => {
           if (cachedResponse) {
             return cachedResponse;
           }
-          // Se for uma navegação de página principal, entrega o index.html salvo
+          // Se for navegação de página principal e estiver offline, entrega o index.html
           if (event.request.mode === 'navigate') {
             return caches.match('./index.html') || caches.match('./');
           }
