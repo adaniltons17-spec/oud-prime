@@ -181,9 +181,8 @@
         </div>
     </div>
 
-    <!-- 🌟 NOVA LANDING PAGE INSTITUCIONAL & COMERCIAL OUD PRIME -->
+    <!-- 🌟 LANDING PAGE INSTITUCIONAL OUD PRIME -->
     <div id="landing-page" class="fixed inset-0 bg-[#0f172a] z-[90] overflow-y-auto flex flex-col">
-        <!-- CABEÇALHO LANDING PAGE -->
         <header class="w-full bg-[#1e293b]/90 border-b border-sky-500/20 backdrop-blur-md sticky top-0 z-50 px-4 py-3">
             <div class="max-w-6xl mx-auto flex justify-between items-center">
                 <div class="flex items-center gap-2.5">
@@ -204,7 +203,6 @@
             </div>
         </header>
 
-        <!-- SEÇÃO HERO -->
         <section class="max-w-5xl mx-auto px-4 py-12 sm:py-16 text-center space-y-6 my-auto">
             <span class="inline-block bg-sky-500/10 text-sky-300 border border-sky-500/30 text-xs uppercase font-extrabold px-4 py-1.5 rounded-full tracking-widest">
                 SOFTWARE & ENGENHARIA CORPORATIVA
@@ -227,7 +225,6 @@
                 </button>
             </div>
 
-            <!-- CARDS DE RECURSOS -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pt-12 text-left">
                 <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-2xl space-y-2">
                     <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 text-lg">
@@ -263,13 +260,12 @@
             </div>
         </section>
 
-        <!-- RODAPÉ LANDING PAGE -->
         <footer class="w-full bg-[#091222] border-t border-slate-800 text-slate-400 text-xs py-4 px-4 text-center">
             <p>OUD PRIME • Sistemas Inteligentes | Desenvolvido por <strong class="text-slate-200">Adanilton Silva</strong></p>
         </footer>
     </div>
 
-    <!-- 📋 MODAL DE FORMULÁRIO DE INTERESSE (CAPTAÇÃO DE LEAD) -->
+    <!-- MODALS E TELAS SECUNDÁRIAS -->
     <div id="modal-lead-form" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-[260] flex items-center justify-center hidden p-4">
         <div class="bg-slate-900 border border-slate-800 text-slate-100 rounded-3xl p-6 max-w-md w-full shadow-2xl space-y-4 relative">
             <div class="flex justify-between items-center border-b border-slate-800 pb-3">
@@ -466,11 +462,9 @@
         </div>
     </div>
 
-    <!-- CABEÇALHO SUPERIOR EXECUTIVO DO SISTEMA -->
+    <!-- CABEÇALHO SUPERIOR EXECUTIVO -->
     <header class="bg-nav-dark text-white px-3.5 md:px-6 py-2 shadow-lg w-full sticky top-0 z-40 h-[65px] flex items-center">
         <div class="max-w-[1800px] w-full mx-auto flex justify-between items-center gap-2">
-            
-            <!-- BRANDING: LOGO E NOME EM LINHA -->
             <div class="flex items-center gap-2.5 shrink-0">
                 <img src="logo_2.jpg" onerror="this.onerror=null; this.src='logo.png';" alt="OP" class="brand-logo-clean h-8 sm:h-9 md:h-10">
                 <div class="flex flex-col justify-center leading-none">
@@ -481,24 +475,19 @@
                 </div>
             </div>
 
-            <!-- AÇÕES DA DIREITA -->
             <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
-                <!-- 1. NOTIFICAÇÕES -->
                 <button onclick="requestNotificationPermission()" title="Ativar Notificações" class="w-8 h-8 md:w-9 md:h-9 bg-slate-800/80 hover:bg-slate-700 text-amber-300 border border-slate-700/60 rounded-xl text-xs font-bold flex items-center justify-center transition shadow shrink-0">
                     <i class="fa-solid fa-bell"></i>
                 </button>
                 
-                <!-- 2. SINCRONIZAÇÃO -->
                 <button onclick="loadDataFromSheet(true)" title="Sincronizar Dados" class="w-8 h-8 md:w-9 md:h-9 bg-slate-800/80 hover:bg-slate-700 text-sky-300 border border-slate-700/60 rounded-xl text-xs font-bold flex items-center justify-center transition shadow shrink-0">
                     <i id="sync-icon-desktop" class="fa-solid fa-arrows-rotate"></i>
                 </button>
 
-                <!-- 3. SAIR DO SISTEMA E VOLTAR À LANDING PAGE -->
                 <button onclick="handleLogout()" title="Sair do Sistema" class="w-8 h-8 md:w-9 md:h-9 bg-rose-950/50 hover:bg-rose-900/80 text-rose-300 border border-rose-800/60 rounded-xl text-xs font-bold flex items-center justify-center transition shadow shrink-0">
                     <i class="fa-solid fa-right-from-bracket"></i>
                 </button>
 
-                <!-- USUÁRIO AUTENTICADO -->
                 <div id="user-badge-container" class="bg-slate-900/90 border border-slate-800 text-slate-200 text-xs px-2 py-1 md:px-3 md:py-1.5 rounded-xl font-bold flex items-center gap-1.5 shadow-inner shrink-0">
                     <div class="w-5 h-5 sm:w-6 sm:h-6 rounded-lg bg-sky-600/30 text-sky-400 border border-sky-500/40 flex items-center justify-center text-[10px] font-black"><i class="fa-solid fa-user"></i></div>
                     <div class="hidden sm:block text-left leading-tight">
@@ -507,14 +496,11 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </header>
 
-    <!-- CORPO PRINCIPAL COM SIDEBAR TOTALMENTE FIXA E SEM BARRA DE ROLAGEM NO DESKTOP -->
+    <!-- CORPO PRINCIPAL COM SIDEBAR FIXA -->
     <div class="flex-1 flex max-w-[1800px] w-full mx-auto relative overflow-hidden">
-
-        <!-- SIDEBAR FIXA NO DESKTOP -->
         <aside class="hidden lg:flex flex-col w-64 bg-sidebar p-4 space-y-2 shrink-0 fixed top-[65px] left-0 h-[calc(100vh-65px)] overflow-hidden z-30">
             <div class="text-[10px] font-black uppercase text-slate-500 tracking-wider px-3 pt-2 pb-1">Navegação</div>
             
@@ -542,7 +528,6 @@
                 <i class="fa-solid fa-file-excel text-base w-5 text-center"></i> <span>Relatórios</span>
             </button>
 
-            <!-- CARD INFORMATIVO BOTTOM SIDEBAR -->
             <div class="mt-auto bg-slate-900/80 border border-slate-800 rounded-2xl p-3 text-center space-y-0.5 shadow-inner">
                 <span class="text-[10px] font-black uppercase text-sky-400 block tracking-widest">OUD PRIME</span>
                 <p class="text-[10px] text-slate-400 leading-tight">Sistemas Inteligentes</p>
@@ -554,21 +539,17 @@
 
             <!-- 1. TELA – MENU PRINCIPAL -->
             <section id="screen1" class="screen-content space-y-4 md:space-y-6">
-                
-                <!-- BANNER PAINEL OPERACIONAL FIXO AO ROLAR A TELA -->
                 <div class="banner-op text-white p-4 sm:p-5 md:p-6 rounded-3xl shadow-2xl flex flex-col space-y-3 sticky top-0 z-20 backdrop-blur-md">
                     <div class="flex justify-between items-center w-full relative">
                         <span class="inline-block bg-sky-500/20 backdrop-blur-md text-sky-200 border border-sky-400/40 text-[10px] sm:text-xs uppercase font-black px-3 py-1 rounded-full tracking-widest shadow-sm">
                             OUD PRIME
                         </span>
 
-                        <!-- BOTÃO DROPDOWN MÓVEL "TRÊS PONTINHOS" -->
                         <div class="lg:hidden relative">
                             <button onclick="toggleMobileDropdownMenu()" class="bg-slate-900/90 hover:bg-slate-800 text-sky-300 border border-sky-500/40 px-3 py-1 rounded-xl text-xs font-black flex items-center gap-1.5 shadow-lg">
                                 <i class="fa-solid fa-ellipsis-vertical text-sm text-sky-400"></i> Menu
                             </button>
 
-                            <!-- DROPDOWN FLUTUANTE COM Z-INDEX SUPERIOR -->
                             <div id="mobile-dropdown-menu" class="hidden absolute right-0 top-9 w-52 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl py-2 z-[300] text-xs space-y-1">
                                 <button onclick="selectMobileMenuOption('screen1')" class="w-full text-left px-4 py-2 hover:bg-sky-600/30 text-slate-200 font-bold flex items-center gap-2.5">
                                     <i class="fa-solid fa-house text-sky-400 w-4"></i> Início
@@ -606,9 +587,7 @@
                     </div>
                 </div>
 
-                <!-- 4 MÓDULOS OPERACIONAIS DA TELA INICIAL -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4.5">
-                    <!-- 1. LANÇAMENTOS -->
                     <div onclick="switchScreen('screen2')" class="card-module cursor-pointer bg-gradient-to-r from-[#0284c7] to-[#0369a1] text-white p-3.5 sm:p-4 md:p-5 rounded-2xl shadow-xl flex items-center justify-between min-h-[80px] sm:min-h-[95px]">
                         <div class="flex items-center gap-3 sm:gap-4">
                             <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-2xl flex items-center justify-center text-base sm:text-xl shadow-inner border border-white/20 shrink-0">
@@ -624,7 +603,6 @@
                         </div>
                     </div>
 
-                    <!-- 2. ESTOQUE -->
                     <div onclick="switchScreen('screen4')" class="card-module cursor-pointer bg-gradient-to-r from-[#0e8a44] to-[#065026] text-white p-3.5 sm:p-4 md:p-5 rounded-2xl shadow-xl flex items-center justify-between min-h-[80px] sm:min-h-[95px]">
                         <div class="flex items-center gap-3 sm:gap-4">
                             <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-2xl flex items-center justify-center text-base sm:text-xl shadow-inner border border-white/20 shrink-0">
@@ -640,7 +618,6 @@
                         </div>
                     </div>
 
-                    <!-- 3. DASHBOARD -->
                     <div onclick="switchScreen('screen5')" class="card-module adm-only cursor-pointer bg-gradient-to-r from-[#d9530f] to-[#8a3003] text-white p-3.5 sm:p-4 md:p-5 rounded-2xl shadow-xl flex items-center justify-between min-h-[80px] sm:min-h-[95px]">
                         <div class="flex items-center gap-3 sm:gap-4">
                             <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-2xl flex items-center justify-center text-base sm:text-xl shadow-inner border border-white/20 shrink-0">
@@ -656,7 +633,6 @@
                         </div>
                     </div>
 
-                    <!-- 4. BASE DE DADOS -->
                     <div onclick="switchScreen('screen6')" class="card-module adm-only cursor-pointer bg-gradient-to-r from-[#6f42c1] to-[#43237a] text-white p-3.5 sm:p-4 md:p-5 rounded-2xl shadow-xl flex items-center justify-between min-h-[80px] sm:min-h-[95px]">
                         <div class="flex items-center gap-3 sm:gap-4">
                             <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-2xl flex items-center justify-center text-base sm:text-xl shadow-inner border border-white/20 shrink-0">
@@ -674,9 +650,8 @@
                 </div>
             </section>
 
-            <!-- 2. TELA – LANÇAMENTOS (FORMATO DARK EXECUTIVO) -->
+            <!-- 2. TELA – LANÇAMENTOS -->
             <section id="screen2" class="screen-content hidden bg-slate-900/90 border border-slate-800 rounded-3xl shadow-2xl p-4 md:p-6 space-y-6">
-                <!-- CABEÇALHO REORGANIZADO -->
                 <div class="bg-gradient-to-r from-[#0284c7] to-[#0369a1] text-white p-3.5 rounded-2xl flex flex-wrap items-center justify-between gap-3 shadow-lg border border-white/10">
                     <div class="flex items-center gap-2.5">
                         <button onclick="switchScreen('screen1')" class="bg-white/20 hover:bg-white/30 text-white font-extrabold px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 transition shrink-0">
@@ -850,7 +825,7 @@
                 </div>
             </section>
 
-            <!-- 4. TELA – ESTOQUE DA APLICAÇÃO COM BOTÃO VOLTAR -->
+            <!-- 4. TELA – ESTOQUE -->
             <section id="screen4" class="screen-content hidden bg-slate-900/90 border border-slate-800 rounded-3xl shadow-2xl p-4 md:p-6 space-y-6">
                 <div class="bg-gradient-to-r from-[#0e8a44] to-[#065026] text-white p-3.5 rounded-2xl flex flex-wrap items-center justify-between gap-2.5 shadow-lg border border-white/10">
                     <div class="flex items-center gap-2.5">
@@ -888,10 +863,9 @@
                 </div>
             </section>
 
-            <!-- 5. TELA – DASHBOARD EXECUTIVO COM TÍTULO LADO A LADO E CALENDÁRIOS NORMAS -->
+            <!-- 5. TELA – DASHBOARD -->
             <section id="screen5" class="screen-content hidden bg-slate-900/90 border border-slate-800 rounded-3xl shadow-2xl p-4 md:p-6 space-y-6">
                 <div class="bg-gradient-to-r from-[#d9530f] to-[#8a3003] text-white p-3.5 rounded-2xl flex flex-col space-y-3 shadow-lg border border-white/10">
-                    <!-- LINHA ÚNICA: BOTÃO VOLTAR LADO A LADO COM TÍTULO E FILTROS -->
                     <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-3 w-full">
                         <div class="flex items-center gap-2.5">
                             <button onclick="switchScreen('screen1')" class="bg-white/20 hover:bg-white/30 text-white font-extrabold px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 transition shrink-0">
@@ -902,7 +876,6 @@
                             </h2>
                         </div>
                         
-                        <!-- BARRA DE FILTROS PADRONIZADA COM CALENDÁRIOS COMPACTOS -->
                         <div class="w-full lg:w-auto bg-slate-950/60 border border-amber-500/30 p-2 rounded-2xl flex flex-col sm:flex-row items-stretch sm:items-center gap-2 text-xs font-semibold">
                             <div class="grid grid-cols-2 gap-2 bg-slate-900/80 p-1.5 rounded-xl border border-slate-800 flex-1 sm:flex-none">
                                 <div class="flex items-center gap-1.5 min-w-0">
@@ -923,7 +896,6 @@
                     </div>
                 </div>
 
-                <!-- CARTÕES DE KPIS -->
                 <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
                     <div class="bg-[#0f5298] text-white p-3.5 rounded-2xl shadow-lg flex justify-between items-center border border-white/10">
                         <div>
@@ -973,7 +945,7 @@
                     <div class="bg-[#495057] text-white p-3.5 rounded-2xl shadow-lg flex justify-between items-center border border-white/10">
                         <div>
                             <p class="text-[9px] uppercase font-bold text-slate-300">EFETIVO MÉDIO</p>
-                            <h3 id="dash-efetivo" class="text-xl md:text-2xl font-black mt-0.5">500</h3>
+                            <h3 id="dash-efetivo" class="text-xl md:text-2xl font-black mt-0.5">0</h3>
                             <p class="text-[9px] text-slate-300">Pessoas</p>
                         </div>
                         <i class="fa-solid fa-users text-2xl opacity-40"></i>
@@ -991,14 +963,13 @@
                     <div class="bg-[#fd7e14] text-white p-3.5 rounded-2xl shadow-lg flex justify-between items-center border border-white/10">
                         <div>
                             <p class="text-[9px] uppercase font-bold text-orange-100">META</p>
-                            <h3 id="dash-meta" class="text-xl md:text-2xl font-black mt-0.5">2,7</h3>
+                            <h3 id="dash-meta" class="text-xl md:text-2xl font-black mt-0.5">0,0</h3>
                             <p class="text-[9px] text-orange-200">L/pessoa/dia</p>
                         </div>
                         <i class="fa-solid fa-bullseye text-2xl opacity-40"></i>
                     </div>
                 </div>
 
-                <!-- GRÁFICOS -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                     <div class="bg-slate-950/60 border border-slate-800 rounded-2xl p-3 md:p-4 shadow-sm flex flex-col">
                         <h4 class="text-xs font-bold uppercase text-slate-300 mb-2">CONSUMO DIÁRIO (GALÕES)</h4>
@@ -1030,7 +1001,7 @@
                 </div>
             </section>
 
-            <!-- 6. TELA – BASE DE DADOS COM BOTÃO VOLTAR -->
+            <!-- 6. TELA – BASE DE DADOS -->
             <section id="screen6" class="screen-content hidden bg-slate-900/90 border border-slate-800 rounded-3xl shadow-2xl p-4 md:p-6 space-y-6">
                 <div class="bg-gradient-to-r from-[#6f42c1] to-[#43237a] text-white p-3.5 rounded-2xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 shadow-lg border border-white/10">
                     <div class="flex items-center gap-2.5">
@@ -1089,7 +1060,7 @@
         </div>
     </footer>
 
-    <!-- MODAL DE AUTENTICAÇÃO COM SENHA MESTRA -->
+    <!-- MODAL DE AUTENTICAÇÃO DEV -->
     <div id="modal-master-auth" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md z-[210] flex items-center justify-center hidden p-4">
         <div class="bg-slate-900 border border-amber-500/40 rounded-3xl p-6 max-w-sm w-full text-center space-y-4 shadow-2xl">
             <div class="w-12 h-12 bg-amber-500/10 text-amber-400 border border-amber-500/30 rounded-2xl flex items-center justify-center text-xl mx-auto shadow-inner">
@@ -1118,7 +1089,7 @@
         </div>
     </div>
 
-    <!-- MODAL DO PAINEL DO DESENVOLVEDOR (SUPERADMIN) -->
+    <!-- MODAL DEV PANEL -->
     <div id="modal-dev-panel" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-[220] flex items-center justify-center hidden p-3">
         <div class="bg-slate-900 border border-slate-800 text-slate-200 rounded-3xl shadow-2xl max-w-3xl w-full p-5 space-y-5 relative max-h-[92vh] overflow-y-auto">
             <div class="flex justify-between items-center pb-3 border-b border-slate-800">
@@ -1136,7 +1107,6 @@
                 <button onclick="closeDevModal()" class="text-slate-400 hover:text-white text-2xl font-bold leading-none">&times;</button>
             </div>
 
-            <!-- DIAGNÓSTICOS RÁPIDOS -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
                 <div class="bg-slate-800/80 border border-slate-700/60 p-3 rounded-2xl">
                     <span class="text-[10px] font-bold uppercase text-slate-400 block">Status Conexão</span>
@@ -1158,7 +1128,6 @@
                 </div>
             </div>
 
-            <!-- CONFIGURAÇÃO DA API -->
             <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-4 space-y-3">
                 <div class="flex justify-between items-center">
                     <h4 class="text-xs font-black uppercase text-amber-400 flex items-center gap-1.5">
@@ -1183,7 +1152,6 @@
                 </div>
             </div>
 
-            <!-- BACKUP TOTAL -->
             <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-4 space-y-3">
                 <h4 class="text-xs font-black uppercase text-emerald-400 flex items-center gap-1.5">
                     <i class="fa-solid fa-database"></i> Backup & Recuperação do Sistema (Dump JSON)
@@ -1204,7 +1172,6 @@
                 </div>
             </div>
 
-            <!-- ZONA DE SEGURANÇA -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-4 space-y-2.5">
                     <h4 class="text-xs font-black uppercase text-sky-400 flex items-center gap-1.5">
@@ -1435,7 +1402,7 @@
         </div>
     </div>
 
-    <!-- SCRIPT DE NÓDULO LÓGICO E REGRAS DE NEGÓCIO -->
+    <!-- SCRIPT DE REGRAS E LÓGICA DO SISTEMA -->
     <script>
         const BASE_USERS = {
             'admin': { pass: '123456', role: 'ADM', name: 'Administrador Principal' },
@@ -1456,26 +1423,20 @@
             'Alojamento 03': ['Módulo 01', 'Módulo 02', 'Módulo 03', 'Módulo 04', 'Módulo 05', 'Módulo 06', 'Módulo 07', 'Módulo 08', 'Módulo 09', 'Área de Vivência', 'Refeitório', 'Ambulatório', 'Sala de Manutenção']
         };
 
-       systemConfig = {
-  efetivo: 0,
-  meta: 0,
-  volumeGalao: 0,
-  estoqueInicial: { 'Site': 0, 'Alojamento 01': 0, 'Alojamento 03': 0 },
-  estoqueInicialVazios: { 'Site': 0, 'Alojamento 01': 0, 'Alojamento 03': 0 },
-  estoqueMinimo: { 'Site': 0, 'Alojamento 01': 0, 'Alojamento 03': 0 }
-}
+        let systemConfig = {
+            efetivo: 0,
+            meta: 0,
+            volumeGalao: 0,
+            estoqueInicial: { 'Site': 0, 'Alojamento 01': 0, 'Alojamento 03': 0 },
+            estoqueInicialVazios: { 'Site': 0, 'Alojamento 01': 0, 'Alojamento 03': 0 },
+            estoqueMinimo: { 'Site': 0, 'Alojamento 01': 0, 'Alojamento 03': 0 }
+        };
 
         let chartDiario, chartLocal, chartEntradasDev, chartMensal;
         let notifiedCriticalLocs = new Set();
 
-        // CONTROLE DA LANDING PAGE E MODAL COMERCIAL
-        function openLeadModal() {
-            document.getElementById('modal-lead-form').classList.remove('hidden');
-        }
-
-        function closeLeadModal() {
-            document.getElementById('modal-lead-form').classList.add('hidden');
-        }
+        function openLeadModal() { document.getElementById('modal-lead-form').classList.remove('hidden'); }
+        function closeLeadModal() { document.getElementById('modal-lead-form').classList.add('hidden'); }
 
         function handleLeadSubmit(e) {
             e.preventDefault();
@@ -1486,111 +1447,54 @@
             const notes = document.getElementById('lead-notes').value.trim();
 
             if (!name || !company || !phone || !email) {
-                showToast('Preencha os campos obrigatórios do formulário.', 'error');
+                showToast('Preencha os campos obrigatórios.', 'error');
                 return;
             }
 
-            let textMsg = `*SOLICITAÇÃO DE ACESSO - OUD PRIME*\n\n`;
-            textMsg += `👤 *Nome:* ${name}\n`;
-            textMsg += `🏢 *Empresa:* ${company}\n`;
-            textMsg += `📱 *Telefone:* ${phone}\n`;
-            textMsg += `✉️ *E-mail:* ${email}\n`;
+            let textMsg = `*SOLICITAÇÃO DE ACESSO - OUD PRIME*\n\n👤 *Nome:* ${name}\n🏢 *Empresa:* ${company}\n📱 *Telefone:* ${phone}\n✉️ *E-mail:* ${email}\n`;
             if (notes) textMsg += `📝 *Observação:* ${notes}\n`;
 
-            const encoded = encodeURIComponent(textMsg);
-            const waUrl = `https://api.whatsapp.com/send?phone=5591983050013&text=${encoded}`;
-
-            showToast('Redirecionando para o WhatsApp Comercial...', 'success');
+            window.open(`https://api.whatsapp.com/send?phone=5591983050013&text=${encodeURIComponent(textMsg)}`, '_blank');
             closeLeadModal();
-            window.open(waUrl, '_blank');
         }
 
-        function openLoginOverlay() {
-            document.getElementById('login-overlay').classList.remove('hidden');
-        }
-
-        function closeLoginOverlay() {
-            if (!currentUser) {
-                document.getElementById('login-overlay').classList.add('hidden');
-            }
-        }
+        function openLoginOverlay() { document.getElementById('login-overlay').classList.remove('hidden'); }
+        function closeLoginOverlay() { if (!currentUser) document.getElementById('login-overlay').classList.add('hidden'); }
 
         function toggleMobileDropdownMenu() {
             const dropdown = document.getElementById('mobile-dropdown-menu');
-            if (dropdown) {
-                dropdown.classList.toggle('hidden');
-            }
+            if (dropdown) dropdown.classList.toggle('hidden');
         }
 
         function selectMobileMenuOption(target) {
             toggleMobileDropdownMenu();
-            if (target === 'modal-config') {
-                openConfigModal();
-            } else if (target === 'modal-export') {
-                openExportModal();
-            } else {
-                switchScreen(target);
-            }
+            if (target === 'modal-config') openConfigModal();
+            else if (target === 'modal-export') openExportModal();
+            else switchScreen(target);
         }
-
-        document.addEventListener('click', function(e) {
-            const dropdown = document.getElementById('mobile-dropdown-menu');
-            const btn = e.target.closest('button');
-            if (dropdown && !dropdown.classList.contains('hidden')) {
-                if (!btn || !btn.getAttribute('onclick') || !btn.getAttribute('onclick').includes('toggleMobileDropdownMenu')) {
-                    if (!dropdown.contains(e.target)) {
-                        dropdown.classList.add('hidden');
-                    }
-                }
-            }
-        });
 
         async function requestNotificationPermission() {
             if (!('Notification' in window)) {
-                showToast('Este dispositivo não suporta Notificações Push.', 'error');
+                showToast('Notificações não suportadas.', 'error');
                 return;
             }
-
             const permission = await Notification.requestPermission();
-            if (permission === 'granted') {
-                showToast('Notificações ativadas com sucesso!', 'success');
-                triggerLocalPushNotification('OUD PRIME - Notificações Ativas', 'Alertas de Estoque Crítico serão enviados para o seu dispositivo.');
-            } else if (permission === 'denied') {
-                showToast('Permissão de notificação negada no navegador.', 'error');
-            }
+            if (permission === 'granted') showToast('Notificações ativadas!', 'success');
         }
 
         function triggerLocalPushNotification(title, body) {
             if ('Notification' in window && Notification.permission === 'granted') {
-                if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
-                    navigator.serviceWorker.ready.then(reg => {
-                        reg.showNotification(title, {
-                            body: body,
-                            icon: './logo.png',
-                            badge: './logo.png',
-                            vibrate: [300, 100, 300],
-                            tag: 'estoque-critico'
-                        });
-                    });
-                } else {
-                    new Notification(title, { body: body, icon: './logo.png' });
-                }
+                new Notification(title, { body: body, icon: './logo.png' });
             }
         }
 
         function checkAndTriggerStockPush(stock) {
-            const criticalLocs = [];
             mainLocations.forEach(loc => {
                 const s = stock[loc];
-                if (s && s.cheios < s.min) {
-                    criticalLocs.push(`${loc} (${s.cheios}/${s.min} gal.)`);
+                if (s && s.cheios < s.min && s.min > 0) {
                     if (!notifiedCriticalLocs.has(loc)) {
                         notifiedCriticalLocs.add(loc);
-                        showToast(`⚠️ ESTOQUE CRÍTICO: ${loc} está com apenas ${s.cheios} galões!`, 'error');
-                        triggerLocalPushNotification(
-                            '⚠️ ESTOQUE CRÍTICO DETECTADO!',
-                            `O local ${loc} está com apenas ${s.cheios} galões (Mínimo: ${s.min}).`
-                        );
+                        triggerLocalPushNotification('⚠️ ESTOQUE CRÍTICO!', `O local ${loc} está com apenas ${s.cheios} itens.`);
                     }
                 } else {
                     notifiedCriticalLocs.delete(loc);
@@ -1603,15 +1507,9 @@
             const str = String(d).trim();
             if (/^\d{4}-\d{2}-\d{2}/.test(str)) return str.substring(0, 10);
             const parts = str.split(/[\/\-]/);
-            if (parts.length === 3) {
-                if (parts[0].length === 2 && parts[2].length === 4) {
-                    return `${parts[2]}-${parts[1].padStart(2, '0')}-${parts[0].padStart(2, '0')}`;
-                }
+            if (parts.length === 3 && parts[0].length === 2 && parts[2].length === 4) {
+                return `${parts[2]}-${parts[1].padStart(2, '0')}-${parts[0].padStart(2, '0')}`;
             }
-            try {
-                const dt = new Date(str);
-                if (!isNaN(dt.getTime())) return dt.toISOString().split('T')[0];
-            } catch(e){}
             return str;
         }
 
@@ -1628,66 +1526,35 @@
         function showToast(message, type = 'info') {
             const container = document.getElementById('toast-container');
             if (!container) return;
-
             const toast = document.createElement('div');
             const bgClass = type === 'success' ? 'bg-emerald-600 text-white' : (type === 'error' ? 'bg-red-600 text-white' : 'bg-slate-900 border border-slate-700 text-sky-300');
-            const icon = type === 'success' ? 'fa-circle-check' : (type === 'error' ? 'fa-triangle-exclamation' : 'fa-circle-info');
-
-            toast.className = `${bgClass} p-3 rounded-xl shadow-2xl flex items-center gap-2.5 text-xs font-bold pointer-events-auto transition-all duration-300 transform translate-y-2 opacity-0`;
-            toast.innerHTML = `<i class="fa-solid ${icon} text-sm"></i><span class="flex-1">${message}</span>`;
+            toast.className = `${bgClass} p-3 rounded-xl shadow-2xl flex items-center gap-2.5 text-xs font-bold transition-all duration-300`;
+            toast.innerHTML = `<i class="fa-solid ${type === 'success' ? 'fa-circle-check' : 'fa-circle-info'}"></i><span>${message}</span>`;
             container.appendChild(toast);
-
-            requestAnimationFrame(() => {
-                toast.classList.remove('translate-y-2', 'opacity-0');
-            });
-
-            setTimeout(() => {
-                toast.classList.add('opacity-0', 'translate-y-2');
-                setTimeout(() => toast.remove(), 300);
-            }, 3500);
+            setTimeout(() => toast.remove(), 3500);
         }
 
         function showConfirmDialog(message, onConfirm) {
             const modal = document.getElementById('confirm-modal');
-            const msgEl = document.getElementById('confirm-message');
-            const btnOk = document.getElementById('confirm-btn-ok');
-            const btnCancel = document.getElementById('confirm-btn-cancel');
-
-            if (!modal || !msgEl || !btnOk || !btnCancel) {
-                onConfirm();
-                return;
-            }
-
-            msgEl.innerText = message;
+            document.getElementById('confirm-message').innerText = message;
             modal.classList.remove('hidden');
 
-            const handleOk = () => {
-                cleanup();
-                modal.classList.add('hidden');
-                onConfirm();
-            };
-
-            const handleCancel = () => {
-                cleanup();
-                modal.classList.add('hidden');
-            };
-
+            const handleOk = () => { cleanup(); modal.classList.add('hidden'); onConfirm(); };
+            const handleCancel = () => { cleanup(); modal.classList.add('hidden'); };
             const cleanup = () => {
-                btnOk.removeEventListener('click', handleOk);
-                btnCancel.removeEventListener('click', handleCancel);
+                document.getElementById('confirm-btn-ok').removeEventListener('click', handleOk);
+                document.getElementById('confirm-btn-cancel').removeEventListener('click', handleCancel);
             };
 
-            btnOk.addEventListener('click', handleOk);
-            btnCancel.addEventListener('click', handleCancel);
+            document.getElementById('confirm-btn-ok').addEventListener('click', handleOk);
+            document.getElementById('confirm-btn-cancel').addEventListener('click', handleCancel);
         }
 
         function formatDriveImageUrl(url) {
             if (!url) return '';
-            if (url.indexOf('drive.google.com') !== -1) {
-                var match = url.match(/\/d\/([a-zA-Z0-9_-]+)/) || url.match(/id=([a-zA-Z0-9_-]+)/);
-                if (match && match[1]) {
-                    return 'https://lh3.googleusercontent.com/d/' + match[1];
-                }
+            if (url.includes('drive.google.com')) {
+                const match = url.match(/\/d\/([a-zA-Z0-9_-]+)/) || url.match(/id=([a-zA-Z0-9_-]+)/);
+                if (match && match[1]) return 'https://lh3.googleusercontent.com/d/' + match[1];
             }
             return url;
         }
@@ -1695,323 +1562,110 @@
         function viewProofModal(index) {
             const record = database[index];
             if (record && record.Comprovante) {
-                const rawUrl = record.Comprovante;
                 const imgEl = document.getElementById('proof-img-display');
-                const modalEl = document.getElementById('modal-view-proof');
-                const linkContainer = document.getElementById('proof-external-link');
-
-                if (rawUrl.indexOf('http://') === 0 || rawUrl.indexOf('https://') === 0) {
-                    const directImgUrl = formatDriveImageUrl(rawUrl);
-                    
-                    if (imgEl) {
-                        imgEl.src = directImgUrl;
-                        imgEl.onerror = function() {
-                            imgEl.style.display = 'none';
-                            if (linkContainer) linkContainer.classList.remove('hidden');
-                        };
-                        imgEl.onload = function() {
-                            imgEl.style.display = 'block';
-                            if (linkContainer) linkContainer.classList.add('hidden');
-                        };
-                    }
-                } else {
-                    if (imgEl) {
-                        imgEl.style.display = 'block';
-                        imgEl.src = rawUrl;
-                    }
-                    if (linkContainer) linkContainer.classList.add('hidden');
-                }
-
-                const btnLink = document.getElementById('proof-btn-open-drive');
-                if (btnLink && (rawUrl.indexOf('http') === 0)) {
-                    btnLink.href = rawUrl;
-                    btnLink.classList.remove('hidden');
-                } else if (btnLink) {
-                    btnLink.classList.add('hidden');
-                }
-
-                if (modalEl) modalEl.classList.remove('hidden');
+                imgEl.src = formatDriveImageUrl(record.Comprovante);
+                document.getElementById('modal-view-proof').classList.remove('hidden');
             } else {
-                showToast('Nenhum comprovante localizado para este registro.', 'error');
+                showToast('Sem comprovante.', 'error');
             }
         }
 
-        function closeProofModal() {
-            const modalEl = document.getElementById('modal-view-proof');
-            if (modalEl) modalEl.classList.add('hidden');
-        }
+        function closeProofModal() { document.getElementById('modal-view-proof').classList.add('hidden'); }
 
         function toggleComprovanteVisibility() {
-            const tipoEl = document.getElementById('single-tipo');
-            const containerEl = document.getElementById('container-comprovante');
-            const compInput = document.getElementById('single-comprovante');
-            const obsContainer = document.getElementById('container-observacao');
-
-            if (!tipoEl || !containerEl || !compInput) return;
-
-            const tipoVal = tipoEl.value;
-
-            if (tipoVal === 'Entrada' || tipoVal === 'Devolução') {
-                containerEl.classList.remove('hidden');
-                compInput.setAttribute('required', 'true');
-                if (obsContainer) obsContainer.classList.remove('md:col-span-2');
+            const tipo = document.getElementById('single-tipo').value;
+            const container = document.getElementById('container-comprovante');
+            const input = document.getElementById('single-comprovante');
+            if (tipo === 'Entrada' || tipo === 'Devolução') {
+                container.classList.remove('hidden');
+                input.setAttribute('required', 'true');
             } else {
-                containerEl.classList.add('hidden');
-                compInput.removeAttribute('required');
-                compInput.value = '';
-                resetFileLabel();
-                if (obsContainer) obsContainer.classList.add('md:col-span-2');
+                container.classList.add('hidden');
+                input.removeAttribute('required');
+                input.value = '';
             }
         }
 
         function updateFileLabel(input) {
             const textEl = document.getElementById('file-chosen-text');
-            if (!textEl) return;
-            if (input.files && input.files.length > 0) {
-                textEl.innerText = input.files[0].name;
-                textEl.classList.add('text-emerald-700');
-            } else {
-                resetFileLabel();
-            }
+            if (input.files && input.files[0]) textEl.innerText = input.files[0].name;
+            else resetFileLabel();
         }
 
         function resetFileLabel() {
             const textEl = document.getElementById('file-chosen-text');
-            if (textEl) {
-                textEl.innerText = 'Selecionar comprovante...';
-                textEl.classList.remove('text-emerald-700');
-            }
+            if (textEl) textEl.innerText = 'Selecionar comprovante...';
         }
 
-        function readFileAsBase64(file) {
-            return new Promise((resolve, reject) => {
-                if (!file) return resolve('');
-                const reader = new FileReader();
-                reader.onload = () => resolve(reader.result);
-                reader.onerror = error => reject(error);
-                reader.readAsDataURL(file);
-            });
-        }
-
-        function compressImage(file, maxWidth = 1000, quality = 0.7) {
-            return new Promise((resolve, reject) => {
-                if (!file) return resolve('');
-                if (file.type.indexOf('image') === -1) {
-                    readFileAsBase64(file).then(resolve).catch(reject);
-                    return;
-                }
-
+        function compressImage(file) {
+            return new Promise((resolve) => {
                 const reader = new FileReader();
                 reader.readAsDataURL(file);
-                reader.onload = event => {
-                    const img = new Image();
-                    img.src = event.target.result;
-                    img.onload = () => {
-                        const canvas = document.createElement('canvas');
-                        let width = img.width;
-                        let height = img.height;
-
-                        if (width > maxWidth) {
-                            height = Math.round((height * maxWidth) / width);
-                            width = maxWidth;
-                        }
-
-                        canvas.width = width;
-                        canvas.height = height;
-                        const ctx = canvas.getContext('2d');
-                        ctx.drawImage(img, 0, 0, width, height);
-
-                        const dataUrl = canvas.toDataURL('image/jpeg', quality);
-                        resolve(dataUrl);
-                    };
-                    img.onerror = error => reject(error);
-                };
-                reader.onerror = error => reject(error);
+                reader.onload = e => resolve(e.target.result);
             });
         }
 
         function togglePassVisibility() {
-            const passInput = document.getElementById('login-pass');
-            const icon = document.getElementById('pass-toggle-icon');
-            if (!passInput) return;
-
-            if (passInput.type === 'password') {
-                passInput.type = 'text';
-                if (icon) {
-                    icon.classList.remove('fa-eye');
-                    icon.classList.add('fa-eye-slash');
-                }
-            } else {
-                passInput.type = 'password';
-                if (icon) {
-                    icon.classList.remove('fa-eye-slash');
-                    icon.classList.add('fa-eye');
-                }
-            }
+            const p = document.getElementById('login-pass');
+            p.type = p.type === 'password' ? 'text' : 'password';
         }
 
-        function openResetPasswordModal() {
-            const modal = document.getElementById('modal-reset-pass');
-            const userInp = document.getElementById('reset-username');
-            const passInp = document.getElementById('reset-new-pass');
-            if (modal) {
-                if (userInp) userInp.value = '';
-                if (passInp) passInp.value = '';
-                modal.classList.remove('hidden');
-            }
-        }
-
-        function closeResetPasswordModal() {
-            const modal = document.getElementById('modal-reset-pass');
-            if (modal) modal.classList.add('hidden');
-        }
+        function openResetPasswordModal() { document.getElementById('modal-reset-pass').classList.remove('hidden'); }
+        function closeResetPasswordModal() { document.getElementById('modal-reset-pass').classList.add('hidden'); }
 
         async function handleResetPassword(e) {
             if (e) e.preventDefault();
             const u = document.getElementById('reset-username').value.trim().toLowerCase();
             const newPass = document.getElementById('reset-new-pass').value.trim();
-
-            if (!u || !newPass) {
-                showToast('Preencha o usuário e a nova senha.', 'error');
-                return;
+            if (USERS_DB[u]) {
+                USERS_DB[u].pass = newPass;
+                localStorage.setItem('controle_agua_users', JSON.stringify(USERS_DB));
+                showToast('Senha redefinida!', 'success');
+                closeResetPasswordModal();
             }
-
-            if (!USERS_DB[u]) {
-                showToast('Usuário não localizado no cadastro.', 'error');
-                return;
-            }
-
-            USERS_DB[u].pass = newPass;
-            localStorage.setItem('controle_agua_users', JSON.stringify(USERS_DB));
-
-            const activeUrl = getActiveScriptUrl();
-            if (navigator.onLine && activeUrl) {
-                fetch(activeUrl, {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-                    body: JSON.stringify({ action: 'saveUsers', users: USERS_DB })
-                }).catch(err => console.error("Erro ao sincronizar nova senha:", err));
-            }
-
-            showToast('Senha redefinida com sucesso! Você já pode entrar.', 'success');
-            
-            const loginUserEl = document.getElementById('login-user');
-            const loginPassEl = document.getElementById('login-pass');
-            if (loginUserEl) loginUserEl.value = u;
-            if (loginPassEl) loginPassEl.value = newPass;
-
-            closeResetPasswordModal();
         }
 
         async function handleLoginSubmit(event) {
             if (event) event.preventDefault();
-
-            const userInput = document.getElementById('login-user');
-            const passInput = document.getElementById('login-pass');
-            const errorEl = document.getElementById('login-error');
-            const submitBtn = document.getElementById('login-submit-btn');
-
-            if (!userInput || !passInput) return false;
-
-            const u = userInput.value.trim().toLowerCase();
-            const p = passInput.value.trim();
-
-            if (!u || !p) {
-                if (errorEl) {
-                    errorEl.innerText = 'Por favor, preencha o usuário e a senha.';
-                    errorEl.classList.remove('hidden');
-                }
-                return false;
-            }
-
-            if (submitBtn) {
-                submitBtn.disabled = true;
-                submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i><span>Verificando...</span>';
-            }
+            const u = document.getElementById('login-user').value.trim().toLowerCase();
+            const p = document.getElementById('login-pass').value.trim();
 
             const savedUsers = localStorage.getItem('controle_agua_users');
-            if (savedUsers) {
-                try { USERS_DB = { ...BASE_USERS, ...JSON.parse(savedUsers) }; } catch(e){}
-            }
-
-            const activeUrl = getActiveScriptUrl();
-            if (navigator.onLine && activeUrl) {
-                try {
-                    const controller = new AbortController();
-                    const timeoutId = setTimeout(() => controller.abort(), 2000);
-                    const fetchUrl = `${activeUrl}${activeUrl.includes('?') ? '&' : '?'}action=getUsers&t=${Date.now()}`;
-                    const res = await fetch(fetchUrl, { cache: 'no-store', signal: controller.signal });
-                    clearTimeout(timeoutId);
-                    
-                    if (res.ok) {
-                        const remoteUsers = await res.json();
-                        if (remoteUsers && typeof remoteUsers === 'object' && Object.keys(remoteUsers).length > 0) {
-                            USERS_DB = { ...BASE_USERS, ...remoteUsers };
-                            localStorage.setItem('controle_agua_users', JSON.stringify(USERS_DB));
-                        }
-                    }
-                } catch (err) {
-                    console.warn("Nuvem indisponível ou lenta, usando base local:", err);
-                }
-            }
+            if (savedUsers) try { USERS_DB = { ...BASE_USERS, ...JSON.parse(savedUsers) }; } catch(e){}
 
             const userObj = USERS_DB[u];
             if (userObj && String(userObj.pass) === String(p)) {
                 currentUser = userObj;
                 localStorage.setItem('controle_agua_session', u);
-                
-                if (errorEl) errorEl.classList.add('hidden');
                 document.getElementById('login-overlay').classList.add('hidden');
                 document.getElementById('landing-page').classList.add('hidden');
-
                 initAppUI();
                 showToast(`Bem-vindo, ${currentUser.name}!`, 'success');
             } else {
-                if (errorEl) {
-                    errorEl.innerText = 'Usuário ou senha incorretos!';
-                    errorEl.classList.remove('hidden');
-                }
-                showToast('Falha no login. Verifique os dados.', 'error');
+                showToast('Usuário ou senha incorretos!', 'error');
             }
-
-            if (submitBtn) {
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = '<i class="fa-solid fa-right-to-bracket"></i><span>Entrar no Sistema</span>';
-            }
-
             return false;
         }
 
         function checkAuthSession() {
             const savedUsers = localStorage.getItem('controle_agua_users');
-            if (savedUsers) {
-                try { USERS_DB = { ...BASE_USERS, ...JSON.parse(savedUsers) }; } catch(e){}
-            }
-
-            const savedUserKey = localStorage.getItem('controle_agua_session');
-            if (savedUserKey && USERS_DB[savedUserKey]) {
-                currentUser = USERS_DB[savedUserKey];
+            if (savedUsers) try { USERS_DB = { ...BASE_USERS, ...JSON.parse(savedUsers) }; } catch(e){}
+            const savedKey = localStorage.getItem('controle_agua_session');
+            if (savedKey && USERS_DB[savedKey]) {
+                currentUser = USERS_DB[savedKey];
                 document.getElementById('login-overlay').classList.add('hidden');
                 document.getElementById('landing-page').classList.add('hidden');
                 initAppUI();
             } else {
-                currentUser = null;
                 document.getElementById('landing-page').classList.remove('hidden');
             }
         }
 
         function handleLogout() {
-            showConfirmDialog('Deseja realmente encerrar a sessão?', () => {
+            showConfirmDialog('Encerrar sessão?', () => {
                 localStorage.removeItem('controle_agua_session');
                 currentUser = null;
                 document.getElementById('landing-page').classList.remove('hidden');
-                document.getElementById('login-overlay').classList.add('hidden');
-                const userInput = document.getElementById('login-user');
-                const passInput = document.getElementById('login-pass');
-                if (userInput) userInput.value = '';
-                if (passInput) passInput.value = '';
-                showToast('Sessão encerrada com sucesso.', 'info');
             });
         }
 
@@ -2023,32 +1677,14 @@
 
         function updateNetworkStatus() {
             const banner = document.getElementById('network-banner');
-            const statusText = document.getElementById('network-status-text');
-            const badge = document.getElementById('pending-badge');
-
             if (!banner) return;
-
-            if (!navigator.onLine) {
-                banner.classList.remove('hidden');
-                if (statusText) statusText.innerHTML = '<i class="fa-solid fa-wifi-slash"></i> Você está offline. Lançamentos serão salvos localmente.';
-            } else {
-                if (pendingQueue.length > 0) {
-                    banner.classList.remove('hidden');
-                    if (statusText) statusText.innerHTML = '<i class="fa-solid fa-arrows-rotate fa-spin"></i> Conexão restabelecida. Sincronizando dados com o Google Sheets...';
-                    syncPendingQueue();
-                } else {
-                    banner.classList.add('hidden');
-                }
-            }
-            if (badge) badge.innerText = `${pendingQueue.length} pendentes`;
+            if (!navigator.onLine) banner.classList.remove('hidden');
+            else banner.classList.add('hidden');
         }
 
         function loadPendingQueue() {
-            const savedQueue = localStorage.getItem('controle_agua_pending');
-            if (savedQueue) {
-                try { pendingQueue = JSON.parse(savedQueue) || []; } catch(e) { pendingQueue = []; }
-            }
-            updateNetworkStatus();
+            const saved = localStorage.getItem('controle_agua_pending');
+            if (saved) try { pendingQueue = JSON.parse(saved) || []; } catch(e) { pendingQueue = []; }
         }
 
         function savePendingQueue() {
@@ -2058,25 +1694,18 @@
 
         async function syncPendingQueue() {
             if (!navigator.onLine || pendingQueue.length === 0) return;
-
-            const recordsToSend = [...pendingQueue];
             const activeUrl = getActiveScriptUrl();
-            try {
-                if (activeUrl) {
+            if (activeUrl) {
+                try {
                     await fetch(activeUrl, {
                         method: 'POST',
                         mode: 'no-cors',
                         headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-                        body: JSON.stringify({ action: 'addRecords', records: recordsToSend })
+                        body: JSON.stringify({ action: 'addRecords', records: pendingQueue })
                     });
-                }
-                pendingQueue = [];
-                savePendingQueue();
-                showToast('Lançamentos pendentes sincronizados com a nuvem!', 'success');
-            } catch(e) {
-                console.error("Falha ao sincronizar fila offline:", e);
-            } finally {
-                updateNetworkStatus();
+                    pendingQueue = [];
+                    savePendingQueue();
+                } catch(e){}
             }
         }
 
@@ -2089,56 +1718,24 @@
                     if (parsed.mainLocations) mainLocations = parsed.mainLocations;
                     if (parsed.tiposLancamento) tiposLancamento = parsed.tiposLancamento;
                     if (parsed.subLocationsMap) subLocationsMap = parsed.subLocationsMap;
-                    if (parsed.USERS_DB && typeof parsed.USERS_DB === 'object') {
-                        USERS_DB = { ...BASE_USERS, ...parsed.USERS_DB };
-                    }
                 }
-            } catch(e) {
-                console.error("Erro no carregamento de configurações:", e);
-                USERS_DB = { ...BASE_USERS };
-            }
+            } catch(e) {}
         }
 
         function startApp() {
-            try {
-                loadSavedConfig();
-                checkAuthSession();
-                initNetworkListeners();
-                loadPendingQueue();
-                initAutoSync();
-            } catch (err) {
-                console.error('Falha na inicialização do app:', err);
-                initAppUI();
-            }
+            loadSavedConfig();
+            checkAuthSession();
+            initNetworkListeners();
+            loadPendingQueue();
         }
 
-        function initAutoSync() {
-            setInterval(() => {
-                if (navigator.onLine && currentUser) {
-                    loadDataFromSheet(false);
-                }
-            }, 25000);
-
-            document.addEventListener('visibilitychange', () => {
-                if (document.visibilityState === 'visible' && navigator.onLine && currentUser) {
-                    loadDataFromSheet(false);
-                }
-            });
-        }
-
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', startApp);
-        } else {
-            startApp();
-        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', startApp);
+        else startApp();
 
         function applyUserPermissions() {
             if (!currentUser) return;
-            const badge = document.getElementById('user-display-name');
-            const roleBadge = document.getElementById('user-display-role');
-            if (badge) badge.innerText = currentUser.name;
-            if (roleBadge) roleBadge.innerText = currentUser.role;
-            
+            document.getElementById('user-display-name').innerText = currentUser.name;
+            document.getElementById('user-display-role').innerText = currentUser.role;
             if (currentUser.role === 'OPERADOR') {
                 document.querySelectorAll('.adm-only').forEach(el => el.classList.add('hidden'));
             } else {
@@ -2148,25 +1745,9 @@
 
         function initAppUI() {
             applyUserPermissions();
-
             const today = new Date().toISOString().split('T')[0];
-            const firstDayOfMonth = new Date(new Date().getFullYear(), new Date().getMonth(), 1).toISOString().split('T')[0];
-
-            const singleDataEl = document.getElementById('single-data');
-            const batchDataEl = document.getElementById('batch-data');
-            const dashStartEl = document.getElementById('dash-date-start');
-            const dashEndEl = document.getElementById('dash-date-end');
-
-            if (singleDataEl) singleDataEl.value = today;
-            if (batchDataEl) batchDataEl.value = today;
-            if (dashStartEl && !dashStartEl.value) dashStartEl.value = firstDayOfMonth;
-            if (dashEndEl && !dashEndEl.value) dashEndEl.value = today;
-
-            const expStartEl = document.getElementById('export-date-start');
-            const expEndEl = document.getElementById('export-date-end');
-            if (expStartEl && !expStartEl.value) expStartEl.value = firstDayOfMonth;
-            if (expEndEl && !expEndEl.value) expEndEl.value = today;
-
+            document.getElementById('single-data').value = today;
+            document.getElementById('batch-data').value = today;
             updateAllSelectsUI();
             toggleComprovanteVisibility();
             buildBatchInputs();
@@ -2175,417 +1756,69 @@
         }
 
         function switchScreen(screenId) {
-            if (!currentUser) {
-                openLoginOverlay();
-                return;
-            }
-
-            if (currentUser.role !== 'ADM' && ['screen5', 'screen6'].includes(screenId)) {
-                showToast('Acesso restrito ao Administrador.', 'error');
-                return;
-            }
-
+            if (!currentUser) return openLoginOverlay();
             document.querySelectorAll('.screen-content').forEach(el => el.classList.add('hidden'));
-            const targetScreen = document.getElementById(screenId);
-            if (targetScreen) targetScreen.classList.remove('hidden');
-
-            document.querySelectorAll('.nav-btn, .sidebar-btn').forEach(el => el.classList.remove('active'));
-            const activeSideNav = document.getElementById(`side-nav-${screenId}`);
-            if (activeSideNav) activeSideNav.classList.add('active');
-
+            document.getElementById(screenId).classList.remove('hidden');
             if (screenId === 'screen3') buildBatchInputs();
             if (screenId === 'screen4') updateStockUI();
             if (screenId === 'screen5') updateDashboard();
             if (screenId === 'screen6') renderFullDatabaseTable();
         }
 
-        async function addNewUser() {
-            const name = document.getElementById('add-user-name').value.trim();
-            const login = document.getElementById('add-user-login').value.trim().toLowerCase();
-            const pass = document.getElementById('add-user-pass').value.trim();
-            const role = document.getElementById('add-user-role').value;
-
-            if (!name || !login || !pass) {
-                showToast('Preencha Nome, Login e Senha.', 'error');
-                return;
-            }
-
-            if (USERS_DB[login]) {
-                showToast('Este login já existe no sistema.', 'error');
-                return;
-            }
-
-            USERS_DB[login] = { pass, role, name };
-            localStorage.setItem('controle_agua_users', JSON.stringify(USERS_DB));
-
-            const activeUrl = getActiveScriptUrl();
-            if (navigator.onLine && activeUrl) {
-                fetch(activeUrl, {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-                    body: JSON.stringify({ action: 'saveUsers', users: USERS_DB })
-                }).catch(e => console.error("Erro ao sincronizar usuários:", e));
-            }
-
-            document.getElementById('add-user-name').value = '';
-            document.getElementById('add-user-login').value = '';
-            document.getElementById('add-user-pass').value = '';
-
-            renderUsersTable();
-            showToast(`Usuário "${name}" cadastrado com sucesso!`, 'success');
-        }
-
-        function openEditUserModal(loginKey) {
-            const user = USERS_DB[loginKey];
-            if (!user) return;
-
-            document.getElementById('edit-user-key').value = loginKey;
-            document.getElementById('edit-user-name').value = user.name;
-            document.getElementById('edit-user-login').value = loginKey;
-            document.getElementById('edit-user-pass').value = user.pass;
-            document.getElementById('edit-user-role').value = user.role;
-
-            document.getElementById('modal-edit-user').classList.remove('hidden');
-        }
-
-        function closeEditUserModal() {
-            document.getElementById('modal-edit-user').classList.add('hidden');
-        }
-
-        function saveEditedUser(e) {
-            if (e) e.preventDefault();
-            const key = document.getElementById('edit-user-key').value;
-            const name = document.getElementById('edit-user-name').value.trim();
-            const pass = document.getElementById('edit-user-pass').value.trim();
-            const role = document.getElementById('edit-user-role').value;
-
-            if (!name || !pass) {
-                showToast('Nome e Senha não podem ficar em branco.', 'error');
-                return;
-            }
-
-            if (USERS_DB[key]) {
-                USERS_DB[key].name = name;
-                USERS_DB[key].pass = pass;
-                USERS_DB[key].role = role;
-
-                localStorage.setItem('controle_agua_users', JSON.stringify(USERS_DB));
-
-                const activeUrl = getActiveScriptUrl();
-                if (navigator.onLine && activeUrl) {
-                    fetch(activeUrl, {
-                        method: 'POST',
-                        mode: 'no-cors',
-                        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-                        body: JSON.stringify({ action: 'saveUsers', users: USERS_DB })
-                    }).catch(err => console.error("Erro ao sincronizar alteração de usuário:", err));
-                }
-
-                renderUsersTable();
-                closeEditUserModal();
-                showToast(`Usuário "${name}" atualizado!`, 'success');
-            }
-        }
-
-        function removeUser(loginKey) {
-            if (loginKey === 'admin') {
-                showToast('O usuário admin não pode ser excluído.', 'error');
-                return;
-            }
-
-            showConfirmDialog(`Deseja remover o usuário "${USERS_DB[loginKey].name}"?`, () => {
-                delete USERS_DB[loginKey];
-                localStorage.setItem('controle_agua_users', JSON.stringify(USERS_DB));
-                
-                const activeUrl = getActiveScriptUrl();
-                if (navigator.onLine && activeUrl) {
-                    fetch(activeUrl, {
-                        method: 'POST',
-                        mode: 'no-cors',
-                        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-                        body: JSON.stringify({ action: 'saveUsers', users: USERS_DB })
-                    });
-                }
-                renderUsersTable();
-                showToast('Usuário removido com sucesso.', 'info');
-            });
-        }
-
-        function renderUsersTable() {
-            const tbody = document.getElementById('users-table-body');
-            if (!tbody) return;
-            tbody.innerHTML = '';
-
-            Object.keys(USERS_DB).forEach(key => {
-                const u = USERS_DB[key];
-                const isAdmin = u.role === 'ADM';
-                tbody.innerHTML += `
-                    <tr class="hover:bg-slate-800/50">
-                        <td class="p-1.5 font-bold">${u.name}</td>
-                        <td class="p-1.5 font-mono text-[9px] text-slate-400">${key}</td>
-                        <td class="p-1.5 text-center">
-                            <span class="${isAdmin ? 'bg-purple-900/60 text-purple-300 border border-purple-700/50' : 'bg-blue-900/60 text-blue-300 border border-blue-700/50'} font-bold px-1.5 py-0.5 rounded text-[9px]">
-                                ${u.role}
-                            </span>
-                        </td>
-                        <td class="p-1.5 text-center flex items-center justify-center gap-2">
-                            <button onclick="openEditUserModal('${key}')" class="text-indigo-400 font-bold hover:text-indigo-300" title="Editar Usuário"><i class="fa-solid fa-pen-to-square"></i></button>
-                            ${key !== 'admin' ? `<button onclick="removeUser('${key}')" class="text-rose-400 font-bold hover:text-rose-300" title="Remover Usuário"><i class="fa-solid fa-trash"></i></button>` : `<span class="text-slate-600 text-[9px]">Fix</span>`}
-                        </td>
-                    </tr>
-                `;
-            });
-        }
-
         function updateAllSelectsUI() {
-            if (!tiposLancamento || tiposLancamento.length === 0) {
-                tiposLancamento = ['Consumo', 'Entrada', 'Devolução'];
-            }
+            const singleLocal = document.getElementById('single-local');
+            singleLocal.innerHTML = '';
+            mainLocations.forEach(loc => {
+                const el = document.createElement('option');
+                el.value = loc; el.innerText = loc;
+                singleLocal.appendChild(el);
+            });
 
-            const singleLocalSelect = document.getElementById('single-local');
-            if (singleLocalSelect) {
-                singleLocalSelect.innerHTML = '';
-                mainLocations.forEach(loc => {
-                    const el = document.createElement('option');
-                    el.value = loc; el.innerText = loc;
-                    singleLocalSelect.appendChild(el);
-                });
-            }
+            const singleTipo = document.getElementById('single-tipo');
+            singleTipo.innerHTML = '';
+            tiposLancamento.forEach(t => {
+                const el = document.createElement('option');
+                el.value = t; el.innerText = t;
+                singleTipo.appendChild(el);
+            });
 
-            const singleTipoSelect = document.getElementById('single-tipo');
-            if (singleTipoSelect) {
-                const currVal = singleTipoSelect.value;
-                singleTipoSelect.innerHTML = '';
-                tiposLancamento.forEach(t => {
-                    const el = document.createElement('option');
-                    el.value = t; el.innerText = t;
-                    singleTipoSelect.appendChild(el);
-                });
-                if (currVal && tiposLancamento.includes(currVal)) {
-                    singleTipoSelect.value = currVal;
-                }
-            }
+            const batchLocal = document.getElementById('batch-local-select');
+            batchLocal.innerHTML = '';
+            mainLocations.forEach(loc => {
+                const el = document.createElement('option');
+                el.value = loc; el.innerText = loc;
+                batchLocal.appendChild(el);
+            });
 
-            const batchLocalSelect = document.getElementById('batch-local-select');
-            if (batchLocalSelect) {
-                batchLocalSelect.innerHTML = '';
-                mainLocations.forEach(loc => {
-                    const el = document.createElement('option');
-                    el.value = loc; el.innerText = loc;
-                    batchLocalSelect.appendChild(el);
-                });
-            }
-
-            const dashFilterSelect = document.getElementById('dash-filter-local');
-            if (dashFilterSelect) {
-                dashFilterSelect.innerHTML = '<option value="Todos">Todos</option>';
-                mainLocations.forEach(loc => {
-                    const el = document.createElement('option');
-                    el.value = loc; el.innerText = loc;
-                    dashFilterSelect.appendChild(el);
-                });
-            }
-
-            const expFilterLocal = document.getElementById('export-filter-local');
-            if (expFilterLocal) {
-                expFilterLocal.innerHTML = '<option value="Todos">Todos os Locais</option>';
-                mainLocations.forEach(loc => {
-                    const el = document.createElement('option');
-                    el.value = loc; el.innerText = loc;
-                    expFilterLocal.appendChild(el);
-                });
-            }
-
-            const cfgSubParent = document.getElementById('cfg-subloc-parent-select');
-            if (cfgSubParent) {
-                cfgSubParent.innerHTML = '';
-                mainLocations.forEach(loc => {
-                    const el = document.createElement('option');
-                    el.value = loc; el.innerText = loc;
-                    cfgSubParent.appendChild(el);
-                });
-                cfgSubParent.onchange = renderSubLocTags;
-            }
+            const dashLocal = document.getElementById('dash-filter-local');
+            dashLocal.innerHTML = '<option value="Todos">Todos</option>';
+            mainLocations.forEach(loc => {
+                const el = document.createElement('option');
+                el.value = loc; el.innerText = loc;
+                dashLocal.appendChild(el);
+            });
 
             updateSubLocations();
             renderConfigDynamicFields();
         }
 
-        function addMainLocation() {
-            const val = document.getElementById('add-main-loc-input').value.trim();
-            if (val && !mainLocations.includes(val)) {
-                mainLocations.push(val);
-                subLocationsMap[val] = subLocationsMap[val] || [];
-                systemConfig.estoqueInicial[val] = 0;
-                systemConfig.estoqueInicialVazios[val] = 0;
-                systemConfig.estoqueMinimo[val] = 100;
-                document.getElementById('add-main-loc-input').value = '';
-                updateAllSelectsUI();
-                showToast(`Local "${val}" adicionado!`, 'success');
-            }
-        }
-
-        function removeMainLocation(loc) {
-            showConfirmDialog(`Deseja remover o local "${loc}"?`, () => {
-                mainLocations = mainLocations.filter(m => m !== loc);
-                delete subLocationsMap[loc];
-                delete systemConfig.estoqueInicial[loc];
-                delete systemConfig.estoqueInicialVazios[loc];
-                delete systemConfig.estoqueMinimo[loc];
-                updateAllSelectsUI();
-                showToast(`Local "${loc}" removido.`, 'info');
-            });
-        }
-
-        function addTipoLancamento() {
-            const val = document.getElementById('add-tipo-input').value.trim();
-            if (val && !tiposLancamento.includes(val)) {
-                tiposLancamento.push(val);
-                document.getElementById('add-tipo-input').value = '';
-                updateAllSelectsUI();
-                showToast(`Tipo "${val}" adicionado!`, 'success');
-            }
-        }
-
-        function removeTipoLancamento(t) {
-            if (['Consumo', 'Entrada', 'Devolução'].includes(t)) {
-                showToast('Não é possível remover tipos padrão.', 'error');
-                return;
-            }
-            tiposLancamento = tiposLancamento.filter(item => item !== t);
-            updateAllSelectsUI();
-            showToast(`Tipo "${t}" removido.`, 'info');
-        }
-
-        function addSubLocation() {
-            const parentLoc = document.getElementById('cfg-subloc-parent-select').value;
-            const val = document.getElementById('add-subloc-input').value.trim();
-            if (parentLoc && val) {
-                subLocationsMap[parentLoc] = subLocationsMap[parentLoc] || [];
-                if (!subLocationsMap[parentLoc].includes(val)) {
-                    subLocationsMap[parentLoc].push(val);
-                    document.getElementById('add-subloc-input').value = '';
-                    renderSubLocTags();
-                    updateSubLocations();
-                    showToast(`Sub-local "${val}" adicionado.`, 'success');
-                }
-            }
-        }
-
-        function removeSubLocation(parentLoc, subLoc) {
-            if (subLocationsMap[parentLoc]) {
-                subLocationsMap[parentLoc] = subLocationsMap[parentLoc].filter(s => s !== subLoc);
-                renderSubLocTags();
-                updateSubLocations();
-            }
-        }
-
-        function renderSubLocTags() {
-            const parentSelect = document.getElementById('cfg-subloc-parent-select');
-            if (!parentSelect) return;
-            const parentLoc = parentSelect.value;
-            const container = document.getElementById('cfg-subloc-list');
-            if (!container) return;
-            container.innerHTML = '';
-            const list = subLocationsMap[parentLoc] || [];
-            list.forEach(sub => {
-                container.innerHTML += `
-                    <span class="bg-purple-950/60 text-purple-300 border border-purple-800/50 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1">
-                        ${sub} <i onclick="removeSubLocation('${parentLoc}', '${sub}')" class="fa-solid fa-xmark cursor-pointer text-rose-400"></i>
-                    </span>
-                `;
-            });
-        }
-
         function renderConfigDynamicFields() {
             renderUsersTable();
-
-            const mainTagContainer = document.getElementById('cfg-main-loc-list');
-            if (mainTagContainer) {
-                mainTagContainer.innerHTML = '';
-                mainLocations.forEach(loc => {
-                    mainTagContainer.innerHTML += `
-                        <span class="bg-sky-950/60 text-sky-300 border border-sky-800/50 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1">
-                            ${loc} <i onclick="removeMainLocation('${loc}')" class="fa-solid fa-xmark cursor-pointer text-rose-400"></i>
-                        </span>
-                    `;
-                });
-            }
-
-            const tipoTagContainer = document.getElementById('cfg-tipos-list');
-            if (tipoTagContainer) {
-                tipoTagContainer.innerHTML = '';
-                tiposLancamento.forEach(t => {
-                    tipoTagContainer.innerHTML += `
-                        <span class="bg-emerald-950/60 text-emerald-300 border border-emerald-800/50 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1">
-                            ${t} ${!['Consumo', 'Entrada', 'Devolução'].includes(t) ? `<i onclick="removeTipoLancamento('${t}')" class="fa-solid fa-xmark cursor-pointer text-rose-400"></i>` : ''}
-                        </span>
-                    `;
-                });
-            }
-
-            renderSubLocTags();
-
             const iniContainer = document.getElementById('cfg-ini-container');
-            if (iniContainer) {
-                iniContainer.innerHTML = '';
-                mainLocations.forEach(loc => {
-                    const val = (systemConfig.estoqueInicial && systemConfig.estoqueInicial[loc]) != null ? systemConfig.estoqueInicial[loc] : 0;
-                    iniContainer.innerHTML += `
-                        <div>
-                            <label class="block text-[10px] font-bold text-slate-300 mb-0.5">${loc}:</label>
-                            <input type="number" id="cfg-ini-${loc}" class="w-full p-1.5 border rounded-lg text-xs font-bold" value="${val}">
-                        </div>
-                    `;
-                });
-            }
-
-            const iniVazContainer = document.getElementById('cfg-inivaz-container');
-            if (iniVazContainer) {
-                iniVazContainer.innerHTML = '';
-                mainLocations.forEach(loc => {
-                    const val = (systemConfig.estoqueInicialVazios && systemConfig.estoqueInicialVazios[loc]) != null ? systemConfig.estoqueInicialVazios[loc] : 0;
-                    iniVazContainer.innerHTML += `
-                        <div>
-                            <label class="block text-[10px] font-bold text-slate-300 mb-0.5">${loc}:</label>
-                            <input type="number" id="cfg-inivaz-${loc}" class="w-full p-1.5 border rounded-lg text-xs font-bold" value="${val}">
-                        </div>
-                    `;
-                });
-            }
-
-            const minContainer = document.getElementById('cfg-min-container');
-            if (minContainer) {
-                minContainer.innerHTML = '';
-                mainLocations.forEach(loc => {
-                    const val = (systemConfig.estoqueMinimo && systemConfig.estoqueMinimo[loc]) != null ? systemConfig.estoqueMinimo[loc] : 200;
-                    minContainer.innerHTML += `
-                        <div>
-                            <label class="block text-[10px] font-bold text-slate-300 mb-0.5">${loc}:</label>
-                            <input type="number" id="cfg-min-${loc}" class="w-full p-1.5 border rounded-lg text-xs font-bold" value="${val}">
-                        </div>
-                    `;
-                });
-            }
+            iniContainer.innerHTML = '';
+            mainLocations.forEach(loc => {
+                const val = systemConfig.estoqueInicial[loc] || 0;
+                iniContainer.innerHTML += `<div><label class="block text-[10px] font-bold text-slate-300 mb-0.5">${loc}:</label><input type="number" id="cfg-ini-${loc}" class="w-full p-1.5 border rounded-lg text-xs font-bold" value="${val}"></div>`;
+            });
         }
 
         function calculateStock() {
             const stock = {};
             mainLocations.forEach(loc => {
-                const iniCheios = (systemConfig.estoqueInicial && systemConfig.estoqueInicial[loc]) != null ? parseInt(systemConfig.estoqueInicial[loc]) || 0 : 0;
-                const iniVazios = (systemConfig.estoqueInicialVazios && systemConfig.estoqueInicialVazios[loc]) != null ? parseInt(systemConfig.estoqueInicialVazios[loc]) || 0 : 0;
-                const minVal = (systemConfig.estoqueMinimo && systemConfig.estoqueMinimo[loc]) != null ? parseInt(systemConfig.estoqueMinimo[loc]) || 200 : 200;
-                stock[loc] = {
-                    inicial: iniCheios,
-                    inicialVazios: iniVazios,
-                    min: minVal,
-                    cheios: iniCheios,
-                    vazios: iniVazios,
-                    entrada: 0,
-                    consumo: 0,
-                    devolucao: 0
-                };
+                const iniCheios = systemConfig.estoqueInicial[loc] || 0;
+                const iniVazios = systemConfig.estoqueInicialVazios[loc] || 0;
+                const minVal = systemConfig.estoqueMinimo[loc] || 0;
+                stock[loc] = { inicial: iniCheios, inicialVazios: iniVazios, min: minVal, cheios: iniCheios, vazios: iniVazios, entrada: 0, consumo: 0, devolucao: 0 };
             });
 
             if (Array.isArray(database)) {
@@ -2593,26 +1826,24 @@
                     if (!r) return;
                     const rawLoc = (r.LocalPrincipal || '').trim();
                     const qtd = parseInt(r.Quantidade) || 0;
-
                     const matchedLoc = mainLocations.find(l => l.trim().toLowerCase() === rawLoc.toLowerCase());
 
                     if (matchedLoc && stock[matchedLoc]) {
                         const tipoNorm = (r.Tipo || '').trim().toLowerCase();
-                        if (tipoNorm === 'consumo') { 
-                            stock[matchedLoc].consumo += qtd; 
-                            stock[matchedLoc].cheios -= qtd; 
+                        if (tipoNorm === 'consumo') {
+                            stock[matchedLoc].consumo += qtd;
+                            stock[matchedLoc].cheios -= qtd;
                             stock[matchedLoc].vazios += qtd;
-                        } else if (tipoNorm === 'entrada') { 
-                            stock[matchedLoc].entrada += qtd; 
-                            stock[matchedLoc].cheios += qtd; 
-                        } else if (tipoNorm === 'devolução' || tipoNorm === 'devolucao') { 
-                            stock[matchedLoc].devolucao += qtd; 
+                        } else if (tipoNorm === 'entrada') {
+                            stock[matchedLoc].entrada += qtd;
+                            stock[matchedLoc].cheios += qtd;
+                        } else if (tipoNorm === 'devolução' || tipoNorm === 'devolucao') {
+                            stock[matchedLoc].devolucao += qtd;
                             stock[matchedLoc].vazios -= qtd;
                         }
                     }
                 });
             }
-
             return stock;
         }
 
@@ -2621,327 +1852,96 @@
             const cardContainer = document.getElementById('stock-cards-container');
             const tbody = document.getElementById('stock-summary-table');
 
-            if (cardContainer) {
-                cardContainer.innerHTML = '';
-                mainLocations.forEach(loc => {
-                    const s = stock[loc] || { inicial: 0, inicialVazios: 0, min: 200, cheios: 0, vazios: 0, entrada: 0, consumo: 0, devolucao: 0 };
-                    const isNormal = s.cheios >= s.min;
-                    const statusClass = isNormal ? 'bg-emerald-950/80 text-emerald-300 border border-emerald-700/50' : 'bg-rose-950/80 text-rose-300 border border-rose-700/50 animate-pulse';
-                    const statusText = isNormal ? '● NORMAL' : '● CRÍTICO (BAIXO)';
+            cardContainer.innerHTML = '';
+            tbody.innerHTML = '';
 
-                    cardContainer.innerHTML += `
-                        <div class="bg-slate-950/60 border ${isNormal ? 'border-slate-800' : 'border-rose-800/80 ring-1 ring-rose-500/30'} rounded-2xl p-4 shadow-lg space-y-3">
-                            <div class="${isNormal ? 'bg-gradient-to-r from-sky-900 to-sky-950' : 'bg-gradient-to-r from-rose-900 to-rose-950'} text-white p-2.5 rounded-xl font-bold text-xs uppercase flex items-center justify-between shadow border border-white/10">
-                                <span class="flex items-center gap-1.5"><i class="fa-solid fa-building text-sky-400"></i> ${loc}</span>
-                                <span class="${statusClass} font-black px-2 py-0.5 rounded-full text-[10px]">${statusText}</span>
+            mainLocations.forEach(loc => {
+                const s = stock[loc] || { inicial: 0, cheios: 0, vazios: 0, min: 0, entrada: 0, consumo: 0, devolucao: 0 };
+                const isNormal = s.cheios >= s.min;
+
+                cardContainer.innerHTML += `
+                    <div class="bg-slate-950/60 border border-slate-800 rounded-2xl p-4 shadow-lg space-y-3">
+                        <div class="bg-gradient-to-r from-sky-900 to-sky-950 text-white p-2.5 rounded-xl font-bold text-xs uppercase flex items-center justify-between shadow">
+                            <span>${loc}</span>
+                            <span class="bg-emerald-950/80 text-emerald-300 font-black px-2 py-0.5 rounded-full text-[10px]">${isNormal ? '● NORMAL' : '● CRÍTICO'}</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 text-xs">
+                            <div class="bg-slate-900 p-2 rounded-xl border border-slate-800">
+                                <span class="text-[10px] uppercase font-bold text-slate-400 block">Cheios</span>
+                                <strong class="text-lg font-black text-white">${s.cheios}</strong>
                             </div>
-                            <div class="grid grid-cols-2 gap-2 text-xs">
-                                <div class="bg-slate-900 p-2 rounded-xl border border-slate-800">
-                                    <span class="text-[10px] uppercase font-bold text-slate-400 block">Cheios</span>
-                                    <strong class="text-lg font-black ${isNormal ? 'text-white' : 'text-rose-400'}">${s.cheios}</strong>
-                                </div>
-                                <div class="bg-slate-900 p-2 rounded-xl border border-slate-800">
-                                    <span class="text-[10px] uppercase font-bold text-amber-400 block">Vazios</span>
-                                    <strong class="text-lg font-black text-amber-400">${s.vazios}</strong>
-                                </div>
-                                <div class="bg-slate-900 p-2 rounded-xl border border-slate-800">
-                                    <span class="text-[10px] uppercase font-bold text-slate-400 block">Inicial</span>
-                                    <strong class="text-xs font-bold text-slate-300">${s.inicial}</strong>
-                                </div>
-                                <div class="bg-slate-900 p-2 rounded-xl border border-slate-800">
-                                    <span class="text-[10px] uppercase font-bold text-slate-400 block">Mínimo</span>
-                                    <strong class="text-xs font-bold text-slate-300">${s.min}</strong>
-                                </div>
-                            </div>
-                            <div class="flex justify-between text-[11px] text-slate-400 pt-1.5 border-t border-slate-800 font-medium">
-                                <span>Entradas: <b class="text-emerald-400 font-bold">+${s.entrada}</b></span>
-                                <span>Consumo: <b class="text-sky-400 font-bold">-${s.consumo}</b></span>
-                                <span>Devol.: <b class="text-amber-400 font-bold">-${s.devolucao}</b></span>
+                            <div class="bg-slate-900 p-2 rounded-xl border border-slate-800">
+                                <span class="text-[10px] uppercase font-bold text-amber-400 block">Vazios</span>
+                                <strong class="text-lg font-black text-amber-400">${s.vazios}</strong>
                             </div>
                         </div>
-                    `;
-                });
-            }
+                    </div>
+                `;
 
-            if (tbody) {
-                tbody.innerHTML = '';
-                mainLocations.forEach(loc => {
-                    const s = stock[loc] || { inicial: 0, inicialVazios: 0, min: 200, cheios: 0, vazios: 0, entrada: 0, consumo: 0, devolucao: 0 };
-                    const isNormal = s.cheios >= s.min;
-                    tbody.innerHTML += `
-                        <tr class="hover:bg-slate-800/50">
-                            <td class="p-2.5 font-bold text-slate-200">${loc}</td>
-                            <td class="p-2.5 text-center text-slate-300">${s.inicial}</td>
-                            <td class="p-2.5 text-center text-emerald-400 font-bold">+${s.entrada}</td>
-                            <td class="p-2.5 text-center text-sky-400 font-bold">-${s.consumo}</td>
-                            <td class="p-2.5 text-center text-amber-400 font-bold">-${s.devolucao}</td>
-                            <td class="p-2.5 text-center font-black ${isNormal ? 'text-white' : 'text-rose-400'} text-sm">${s.cheios}</td>
-                            <td class="p-2.5 text-center font-black text-amber-400 text-sm">${s.vazios}</td>
-                            <td class="p-2.5 text-center">
-                                <span class="${isNormal ? 'bg-emerald-950/80 text-emerald-300 border border-emerald-700/50' : 'bg-rose-950/80 text-rose-300 border border-rose-700/50'} font-bold px-2 py-0.5 rounded-full text-[10px]">
-                                    ● ${isNormal ? 'OK' : 'Crítico'}
-                                </span>
-                            </td>
-                        </tr>
-                    `;
-                });
-            }
-
-            checkAndTriggerStockPush(stock);
+                tbody.innerHTML += `
+                    <tr class="hover:bg-slate-800/50">
+                        <td class="p-2.5 font-bold text-slate-200">${loc}</td>
+                        <td class="p-2.5 text-center text-slate-300">${s.inicial}</td>
+                        <td class="p-2.5 text-center text-emerald-400 font-bold">+${s.entrada}</td>
+                        <td class="p-2.5 text-center text-sky-400 font-bold">-${s.consumo}</td>
+                        <td class="p-2.5 text-center text-amber-400 font-bold">-${s.devolucao}</td>
+                        <td class="p-2.5 text-center font-black text-white text-sm">${s.cheios}</td>
+                        <td class="p-2.5 text-center font-black text-amber-400 text-sm">${s.vazios}</td>
+                        <td class="p-2.5 text-center"><span class="bg-emerald-950/80 text-emerald-300 font-bold px-2 py-0.5 rounded-full text-[10px]">● OK</span></td>
+                    </tr>
+                `;
+            });
         }
 
         function initCharts() {
-            if (typeof Chart === 'undefined') {
-                console.warn('Biblioteca Chart.js indisponível no momento.');
-                return;
-            }
-
-            try {
-                const chartOptions = {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: { legend: { position: 'top', labels: { color: '#cbd5e1' } } },
-                    scales: {
-                        x: { ticks: { color: '#94a3b8' }, grid: { color: 'rgba(255,255,255,0.05)' } },
-                        y: { ticks: { color: '#94a3b8' }, grid: { color: 'rgba(255,255,255,0.05)' } }
-                    }
-                };
-
-                const elDiario = document.getElementById('chartConsumoDiario');
-                if (elDiario && !chartDiario) {
-                    chartDiario = new Chart(elDiario.getContext('2d'), {
-                        type: 'bar',
-                        data: {
-                            labels: [],
-                            datasets: [{ label: 'Consumo', data: [], backgroundColor: '#0284c7' }]
-                        },
-                        options: chartOptions
-                    });
-                }
-
-                const elLocal = document.getElementById('chartConsumoLocal');
-                if (elLocal && !chartLocal) {
-                    chartLocal = new Chart(elLocal.getContext('2d'), {
-                        type: 'doughnut',
-                        data: {
-                            labels: mainLocations,
-                            datasets: [{ data: mainLocations.map(() => 0), backgroundColor: ['#0284c7', '#0e8a44', '#d9530f', '#6f42c1', '#fd7e14'] }]
-                        },
-                        options: { ...chartOptions, scales: {} }
-                    });
-                }
-
-                const elEntDev = document.getElementById('chartEntradasDevolucoes');
-                if (elEntDev && !chartEntradasDev) {
-                    chartEntradasDev = new Chart(elEntDev.getContext('2d'), {
-                        type: 'line',
-                        data: {
-                            labels: [],
-                            datasets: [
-                                { label: 'Entradas', data: [], borderColor: '#10b981', fill: false },
-                                { label: 'Devoluções', data: [], borderColor: '#f59e0b', fill: false }
-                            ]
-                        },
-                        options: chartOptions
-                    });
-                }
-
-                const elMensal = document.getElementById('chartConsumoMensal');
-                if (elMensal && !chartMensal) {
-                    chartMensal = new Chart(elMensal.getContext('2d'), {
-                        type: 'bar',
-                        data: {
-                            labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
-                            datasets: [{ label: 'Galões', data: Array(12).fill(0), backgroundColor: '#0284c7' }]
-                        },
-                        options: chartOptions
-                    });
-                }
-            } catch (err) {
-                console.error('Falha ao inicializar gráficos:', err);
-            }
+            if (typeof Chart === 'undefined') return;
+            const chartOptions = { responsive: true, maintainAspectRatio: false };
+            chartDiario = new Chart(document.getElementById('chartConsumoDiario').getContext('2d'), { type: 'bar', data: { labels: [], datasets: [{ label: 'Consumo', data: [], backgroundColor: '#0284c7' }] }, options: chartOptions });
+            chartLocal = new Chart(document.getElementById('chartConsumoLocal').getContext('2d'), { type: 'doughnut', data: { labels: mainLocations, datasets: [{ data: mainLocations.map(() => 0), backgroundColor: ['#0284c7', '#0e8a44', '#d9530f'] }] }, options: chartOptions });
+            chartEntradasDev = new Chart(document.getElementById('chartEntradasDevolucoes').getContext('2d'), { type: 'line', data: { labels: [], datasets: [{ label: 'Entradas', data: [], borderColor: '#10b981' }, { label: 'Devoluções', data: [], borderColor: '#f59e0b' }] }, options: chartOptions });
+            chartMensal = new Chart(document.getElementById('chartConsumoMensal').getContext('2d'), { type: 'bar', data: { labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'], datasets: [{ label: 'Galões', data: Array(12).fill(0), backgroundColor: '#0284c7' }] }, options: chartOptions });
         }
 
-        // LÓGICA DE LEITURA DO DASHBOARD CORRIGIDA E COMPLETA
         function updateDashboard() {
-            const filterLocEl = document.getElementById('dash-filter-local');
-            const startEl = document.getElementById('dash-date-start');
-            const endEl = document.getElementById('dash-date-end');
-
-            const selectedFilterLoc = filterLocEl ? filterLocEl.value : 'Todos';
-            const startDateVal = startEl ? startEl.value : '';
-            const endDateVal = endEl ? endEl.value : '';
-
             let totalConsumo = 0, totalEntradas = 0, totalDevolucoes = 0;
             const stock = calculateStock();
-
-            let diasIntervalo = 30;
-            if (startDateVal && endDateVal) {
-                const dtStart = new Date(startDateVal + 'T00:00:00');
-                const dtEnd = new Date(endDateVal + 'T23:59:59');
-                const diffTime = dtEnd - dtStart;
-                const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-                diasIntervalo = diffDays > 0 ? diffDays : 1;
-            }
-
-            const dailyConsumption = {};
-            const dailyEntradas = {};
-            const dailyDevolucoes = {};
-            const localConsumption = {};
-            const monthlyConsumption = Array(12).fill(0);
-
-            mainLocations.forEach(loc => localConsumption[loc] = 0);
 
             database.forEach(r => {
                 if (!r) return;
                 const q = parseInt(r.Quantidade) || 0;
-                
-                const rawLoc = (r.LocalPrincipal || '').trim().toLowerCase();
-                const selLocNorm = selectedFilterLoc.trim().toLowerCase();
-                const matchesLoc = selLocNorm === 'todos' || rawLoc === selLocNorm;
-                
-                let matchesDate = true;
-                const normRecDate = normalizeDate(r.Data);
-                if (normRecDate && startDateVal && endDateVal) {
-                    matchesDate = (normRecDate >= startDateVal && normRecDate <= endDateVal);
-                }
-
-                if (matchesLoc && matchesDate) {
-                    const tipoNorm = (r.Tipo || '').trim().toLowerCase();
-                    if (tipoNorm === 'consumo') {
-                        totalConsumo += q;
-                        dailyConsumption[normRecDate] = (dailyConsumption[normRecDate] || 0) + q;
-                        
-                        const matchedMainLoc = mainLocations.find(m => m.trim().toLowerCase() === rawLoc);
-                        if (matchedMainLoc) {
-                            localConsumption[matchedMainLoc] = (localConsumption[matchedMainLoc] || 0) + q;
-                        }
-                        
-                        if (normRecDate) {
-                            const monthIdx = new Date(normRecDate + 'T00:00:00').getMonth();
-                            if (monthIdx >= 0 && monthIdx < 12) monthlyConsumption[monthIdx] += q;
-                        }
-                    } else if (tipoNorm === 'entrada') {
-                        totalEntradas += q;
-                        dailyEntradas[normRecDate] = (dailyEntradas[normRecDate] || 0) + q;
-                    } else if (tipoNorm === 'devolução' || tipoNorm === 'devolucao') {
-                        totalDevolucoes += q;
-                        dailyDevolucoes[normRecDate] = (dailyDevolucoes[normRecDate] || 0) + q;
-                    }
-                }
+                const tipoNorm = (r.Tipo || '').trim().toLowerCase();
+                if (tipoNorm === 'consumo') totalConsumo += q;
+                else if (tipoNorm === 'entrada') totalEntradas += q;
+                else if (tipoNorm === 'devolução' || tipoNorm === 'devolucao') totalDevolucoes += q;
             });
 
-            let estoqueAtualLocal = 0;
-            if (selectedFilterLoc === 'Todos') {
-                Object.keys(stock).forEach(k => estoqueAtualLocal += stock[k].cheios);
-            } else if (stock[selectedFilterLoc]) {
-                estoqueAtualLocal = stock[selectedFilterLoc].cheios;
-            }
-
-            const totalLitros = totalConsumo * systemConfig.volumeGalao;
-            const mediaDiaria = Math.round(totalConsumo / diasIntervalo);
-            const mediaDiariaLitros = Math.round(totalLitros / diasIntervalo);
-            const litrosPessoaDia = systemConfig.efetivo > 0 ? (totalLitros / (systemConfig.efetivo * diasIntervalo)).toFixed(1) : "0,0";
-
-            const elConsumo = document.getElementById('dash-consumo-total');
-            const elLitros = document.getElementById('dash-litros-total');
-            const elEntradas = document.getElementById('dash-entradas');
-            const elDevol = document.getElementById('dash-devolucoes');
-            const elEstoque = document.getElementById('dash-estoque-atual');
-            const elMediaDia = document.getElementById('dash-media-diaria');
-            const elMediaDiaLit = document.getElementById('dash-media-diaria-litros');
-            const elEfetivo = document.getElementById('dash-efetivo');
-            const elLitrosPess = document.getElementById('dash-litros-pessoa');
-            const elMeta = document.getElementById('dash-meta');
-
-            if (elConsumo) elConsumo.innerText = totalConsumo;
-            if (elLitros) elLitros.innerText = `${totalLitros.toLocaleString()} litros`;
-            if (elEntradas) elEntradas.innerText = totalEntradas;
-            if (elDevol) elDevol.innerText = totalDevolucoes;
-            if (elEstoque) elEstoque.innerText = estoqueAtualLocal;
-            if (elMediaDia) elMediaDia.innerText = mediaDiaria;
-            if (elMediaDiaLit) elMediaDiaLit.innerText = `${mediaDiariaLitros} litros/dia`;
-            if (elEfetivo) elEfetivo.innerText = systemConfig.efetivo;
-            if (elLitrosPess) elLitrosPess.innerText = litrosPessoaDia.toString().replace('.', ',');
-            if (elMeta) elMeta.innerText = systemConfig.meta.toString().replace('.', ',');
-
-            const sortedDates = Object.keys(dailyConsumption).sort();
-            
-            if (chartDiario) {
-                chartDiario.data.labels = sortedDates.length ? sortedDates : ['Sem dados'];
-                chartDiario.data.datasets[0].data = sortedDates.length ? sortedDates.map(d => dailyConsumption[d]) : [0];
-                chartDiario.update();
-            }
-
-            if (chartLocal) {
-                chartLocal.data.labels = mainLocations;
-                chartLocal.data.datasets[0].data = mainLocations.map(loc => localConsumption[loc] || 0);
-                chartLocal.update();
-            }
-
-            if (chartEntradasDev) {
-                const allDates = Array.from(new Set([...Object.keys(dailyEntradas), ...Object.keys(dailyDevolucoes)])).sort();
-                chartEntradasDev.data.labels = allDates.length ? allDates : ['Sem dados'];
-                chartEntradasDev.data.datasets[0].data = allDates.map(d => dailyEntradas[d] || 0);
-                chartEntradasDev.data.datasets[1].data = allDates.map(d => dailyDevolucoes[d] || 0);
-                chartEntradasDev.update();
-            }
-
-            if (chartMensal) {
-                chartMensal.data.datasets[0].data = monthlyConsumption;
-                chartMensal.update();
-            }
+            document.getElementById('dash-consumo-total').innerText = totalConsumo;
+            document.getElementById('dash-entradas').innerText = totalEntradas;
+            document.getElementById('dash-devolucoes').innerText = totalDevolucoes;
         }
 
         function updateSubLocations() {
-            const tipo = document.getElementById('single-tipo').value;
             const mainLoc = document.getElementById('single-local').value;
             const subSelect = document.getElementById('single-detalhe');
-            if (!subSelect) return;
-
             subSelect.innerHTML = '';
-
-            if (tipo === 'Entrada' || tipo === 'Devolução') {
+            (subLocationsMap[mainLoc] || []).forEach(opt => {
                 const el = document.createElement('option');
-                el.value = 'Geral'; el.innerText = 'Geral';
+                el.value = opt; el.innerText = opt;
                 subSelect.appendChild(el);
-            } else {
-                const options = subLocationsMap[mainLoc] || [];
-                options.forEach(opt => {
-                    const el = document.createElement('option');
-                    el.value = opt; el.innerText = opt;
-                    subSelect.appendChild(el);
-                });
-            }
+            });
         }
 
-        function changeBatchLocation() {
-            const selectedLoc = document.getElementById('batch-local-select').value;
-            const labelEl = document.getElementById('batch-total-label');
-            if (labelEl) labelEl.innerText = `TOTAL ${selectedLoc.toUpperCase()}`;
-            buildBatchInputs();
-        }
+        function changeBatchLocation() { buildBatchInputs(); }
 
         function buildBatchInputs() {
-            const selectEl = document.getElementById('batch-local-select');
-            if (!selectEl) return;
-            const selectedLoc = selectEl.value;
+            const selectedLoc = document.getElementById('batch-local-select').value;
             const container = document.getElementById('batch-inputs');
-            if (!container) return;
             container.innerHTML = '';
-
-            const subLocs = subLocationsMap[selectedLoc] || [];
-
-            subLocs.forEach(loc => {
+            (subLocationsMap[selectedLoc] || []).forEach(loc => {
                 container.innerHTML += `
                     <div class="flex items-center justify-between border-b border-slate-800 pb-1.5">
-                        <span class="text-xs font-semibold text-slate-300 flex items-center gap-1.5">
-                            <i class="fa-solid fa-house text-sky-400"></i> ${loc}
-                        </span>
-                        <div class="flex items-center gap-1.5">
-                            <input type="number" min="0" data-loc="${loc}" oninput="updateBatchSummary()" class="batch-qtd-input w-16 p-1 border rounded text-center font-bold text-xs" placeholder="0">
-                            <span class="text-[11px] text-slate-400">gal.</span>
-                        </div>
+                        <span class="text-xs font-semibold text-slate-300"><i class="fa-solid fa-house text-sky-400"></i> ${loc}</span>
+                        <input type="number" min="0" data-loc="${loc}" oninput="updateBatchSummary()" class="batch-qtd-input w-16 p-1 border rounded text-center font-bold text-xs" placeholder="0">
                     </div>
                 `;
             });
@@ -2949,60 +1949,26 @@
         }
 
         function updateBatchSummary() {
-            const inputs = document.querySelectorAll('.batch-qtd-input');
-            const summary = document.getElementById('batch-summary');
-            if (!summary) return;
-            summary.innerHTML = '';
             let total = 0;
-
-            inputs.forEach(inp => {
-                const val = parseInt(inp.value) || 0;
-                total += val;
-                if (val > 0) {
-                    summary.innerHTML += `
-                        <div class="flex justify-between border-b border-slate-800 pb-0.5">
-                            <span>${inp.dataset.loc}:</span>
-                            <strong>${val} galões</strong>
-                        </div>
-                    `;
-                }
-            });
-
-            const totalEl = document.getElementById('batch-total');
-            if (totalEl) totalEl.innerText = total;
+            document.querySelectorAll('.batch-qtd-input').forEach(inp => total += parseInt(inp.value) || 0);
+            document.getElementById('batch-total').innerText = total;
         }
 
         function submitBatch() {
             const selectedLoc = document.getElementById('batch-local-select').value;
             const date = document.getElementById('batch-data').value;
-            const inputs = document.querySelectorAll('.batch-qtd-input');
             const records = [];
-            const timestampNow = new Date().toLocaleString('pt-BR');
 
-            inputs.forEach(inp => {
+            document.querySelectorAll('.batch-qtd-input').forEach(inp => {
                 const val = parseInt(inp.value) || 0;
                 if (val > 0) {
                     records.push({
-                        DataRegistro: timestampNow,
-                        Data: date,
-                        Tipo: 'Consumo',
-                        LocalPrincipal: selectedLoc,
-                        LocalDetalhe: inp.dataset.loc,
-                        Quantidade: val,
-                        Comprovante: '',
-                        Observacao: `Consumo Detalhado ${selectedLoc}`,
-                        Usuario: currentUser ? currentUser.name : 'Operador'
+                        DataRegistro: new Date().toLocaleString('pt-BR'),
+                        Data: date, Tipo: 'Consumo', LocalPrincipal: selectedLoc, LocalDetalhe: inp.dataset.loc, Quantidade: val, Usuario: currentUser ? currentUser.name : 'Operador'
                     });
                 }
             });
-
-            if (records.length === 0) {
-                showToast('Preencha ao menos uma quantidade.', 'error');
-                return;
-            }
-
-            saveRecords(records);
-            clearBatch();
+            if (records.length > 0) saveRecords(records);
         }
 
         function clearBatch() {
@@ -3010,72 +1976,23 @@
             updateBatchSummary();
         }
 
-        // VALIDAÇÃO DE SALDO DISPONÍVEL ANTES DE CONCLUIR O LANÇAMENTO
         async function handleSingleSubmit(e) {
             e.preventDefault();
-
-            const tipo = document.getElementById('single-tipo').value;
-            const local = document.getElementById('single-local').value;
-            const qtd = parseInt(document.getElementById('single-qtd').value) || 0;
-            const compFileEl = document.getElementById('single-comprovante');
-
-            // VALIDAÇÃO DE SALDO DE VAZIOS E CHEIOS
-            const currentStock = calculateStock();
-            const locStock = currentStock[local] || { cheios: 0, vazios: 0 };
-
-            if (tipo === 'Devolução') {
-                if (qtd > locStock.vazios) {
-                    showToast(`Operação bloqueada! O local ${local} possui apenas ${locStock.vazios} galões vazios disponíveis para devolução.`, 'error');
-                    return;
-                }
-            } else if (tipo === 'Consumo') {
-                if (qtd > locStock.cheios) {
-                    showToast(`Operação bloqueada! O local ${local} possui apenas ${locStock.cheios} galões cheios em estoque.`, 'error');
-                    return;
-                }
-            }
-
-            if ((tipo === 'Entrada' || tipo === 'Devolução') && (!compFileEl.files || compFileEl.files.length === 0)) {
-                showToast(`É obrigatório anexar um comprovante para lançamentos de ${tipo}!`, 'error');
-                return;
-            }
-
-            let comprovanteBase64 = '';
-            if (compFileEl.files && compFileEl.files[0]) {
-                try {
-                    showToast('Otimizando imagem do comprovante...', 'info');
-                    comprovanteBase64 = await compressImage(compFileEl.files[0]);
-                } catch (err) {
-                    showToast('Erro ao carregar imagem do comprovante.', 'error');
-                    return;
-                }
-            }
-
-            const timestampNow = new Date().toLocaleString('pt-BR');
             const record = {
-                DataRegistro: timestampNow,
+                DataRegistro: new Date().toLocaleString('pt-BR'),
                 Data: document.getElementById('single-data').value,
-                Tipo: tipo,
-                LocalPrincipal: local,
+                Tipo: document.getElementById('single-tipo').value,
+                LocalPrincipal: document.getElementById('single-local').value,
                 LocalDetalhe: document.getElementById('single-detalhe').value,
-                Quantidade: qtd,
-                Comprovante: comprovanteBase64,
-                Observacao: document.getElementById('single-obs').value || '-',
+                Quantidade: parseInt(document.getElementById('single-qtd').value) || 0,
                 Usuario: currentUser ? currentUser.name : 'Operador'
             };
-
             saveRecords([record]);
-            document.getElementById('form-single').reset();
-            document.getElementById('single-data').value = new Date().toISOString().split('T')[0];
-            updateSubLocations();
-            toggleComprovanteVisibility();
-            resetFileLabel();
         }
 
         async function saveRecords(records) {
             database.push(...records);
             localStorage.setItem('controle_agua_db', JSON.stringify(database));
-
             renderRecentTable();
             updateStockUI();
             updateDashboard();
@@ -3089,101 +2006,44 @@
                         headers: { 'Content-Type': 'text/plain;charset=utf-8' },
                         body: JSON.stringify({ action: 'addRecords', records: records })
                     });
-                    showToast('Lançamento registrado e salvo na nuvem!', 'success');
-                    setTimeout(() => loadDataFromSheet(false), 1500);
-                } catch(e) {
-                    pendingQueue.push(...records);
-                    savePendingQueue();
-                    showToast('Conexão instável. Registro salvo no aparelho.', 'info');
-                }
-            } else {
-                pendingQueue.push(...records);
-                savePendingQueue();
-                showToast('Você está offline. Lançamento salvo no aparelho!', 'info');
+                    showToast('Lançamento salvo na nuvem!', 'success');
+                } catch(e){}
             }
         }
 
         async function loadDataFromSheet(userTriggered = false) {
-            const iconDesktop = document.getElementById('sync-icon-desktop');
-            if (iconDesktop) iconDesktop.classList.add('fa-spin');
-
-            const savedLocalDB = localStorage.getItem('controle_agua_db');
-            if (savedLocalDB && database.length === 0) {
-                try { database = JSON.parse(savedLocalDB) || []; } catch(e) { database = []; }
-            }
-
             const activeUrl = getActiveScriptUrl();
             if (navigator.onLine && activeUrl) {
                 try {
-                    const fetchUrl = `${activeUrl}${activeUrl.includes('?') ? '&' : '?'}t=${Date.now()}`;
-                    const res = await fetch(fetchUrl, { cache: 'no-store' });
+                    const res = await fetch(`${activeUrl}?t=${Date.now()}`);
                     const data = await res.json();
-                    
-                    if (data && typeof data === 'object') {
-                        if (Array.isArray(data.records)) {
-                            database = data.records;
-                            localStorage.setItem('controle_agua_db', JSON.stringify(database));
-                        } else if (Array.isArray(data)) {
-                            database = data;
-                            localStorage.setItem('controle_agua_db', JSON.stringify(database));
-                        }
-                        if (data.users && typeof data.users === 'object') {
-                            USERS_DB = { ...BASE_USERS, ...data.users };
-                            localStorage.setItem('controle_agua_users', JSON.stringify(USERS_DB));
-                        }
+                    if (data && Array.isArray(data.records)) {
+                        database = data.records;
+                        localStorage.setItem('controle_agua_db', JSON.stringify(database));
                     }
-
-                    if (userTriggered) {
-                        showToast('Dados sincronizados com o Google Sheets!', 'success');
-                    }
-                } catch (err) {
-                    console.warn("Carregamento remoto:", err);
-                    if (userTriggered) {
-                        showToast('Não foi possível sincronizar agora. Verifique sua conexão.', 'error');
-                    }
-                }
+                } catch (err) {}
             }
-
-            setTimeout(() => {
-                if (iconDesktop) iconDesktop.classList.remove('fa-spin');
-            }, 600);
-
             renderRecentTable();
             updateStockUI();
             updateDashboard();
-            const activeScreen = document.querySelector('.screen-content:not(.hidden)');
-            if (activeScreen && activeScreen.id === 'screen6') {
-                renderFullDatabaseTable();
-            }
         }
 
         function renderRecentTable() {
             const tbody = document.getElementById('table-recent-body');
-            if (!tbody) return;
             tbody.innerHTML = '';
-
             const list = [...database].reverse().slice(0, 5);
-
             if (list.length === 0) {
                 tbody.innerHTML = `<tr><td colspan="7" class="p-3 text-center text-xs text-slate-400">Nenhum lançamento.</td></tr>`;
                 return;
             }
-
-            list.forEach((r, idx) => {
-                const realIndex = database.length - 1 - idx;
-                const compBtn = r.Comprovante 
-                    ? `<button onclick="viewProofModal(${realIndex})" class="text-emerald-400 font-black text-xs hover:underline flex items-center justify-center gap-1 mx-auto"><i class="fa-solid fa-eye"></i> Ver Anexo</button>` 
-                    : `<span class="text-slate-500 text-[10px]">-</span>`;
-
+            list.forEach(r => {
                 tbody.innerHTML += `
                     <tr class="hover:bg-slate-800/50">
-                        <td class="p-2" title="Gravado em: ${r.DataRegistro || '-'}">${formatDisplayDate(r.Data)}</td>
-                        <td class="p-2 font-bold ${r.Tipo === 'Consumo' ? 'text-sky-400' : 'text-emerald-400'}">${r.Tipo || '-'}</td>
+                        <td class="p-2">${formatDisplayDate(r.Data)}</td>
+                        <td class="p-2 font-bold text-sky-400">${r.Tipo || '-'}</td>
                         <td class="p-2">${r.LocalPrincipal || '-'}</td>
                         <td class="p-2">${r.LocalDetalhe || '-'}</td>
                         <td class="p-2 text-center font-black">${r.Quantidade || 0}</td>
-                        <td class="p-2 text-center">${compBtn}</td>
-                        <td class="p-2 text-center"><button onclick="deleteRecord(${realIndex})" class="text-rose-400 font-bold"><i class="fa-solid fa-trash"></i></button></td>
                     </tr>
                 `;
             });
@@ -3191,463 +2051,67 @@
 
         function renderFullDatabaseTable() {
             const tbody = document.getElementById('table-full-db');
-            if (!tbody) return;
             tbody.innerHTML = '';
-
             if (database.length === 0) {
                 tbody.innerHTML = `<tr><td colspan="8" class="p-3 text-center text-xs text-slate-400">Nenhum registro.</td></tr>`;
                 return;
             }
-
-            database.forEach((r, idx) => {
-                const userName = r.Usuario || 'Não informado';
-                const compBtn = r.Comprovante 
-                    ? `<button onclick="viewProofModal(${idx})" class="text-emerald-400 font-black text-xs hover:underline flex items-center justify-center gap-1 mx-auto"><i class="fa-solid fa-eye"></i> Ver Anexo</button>` 
-                    : `<span class="text-slate-500 text-[10px]">-</span>`;
-
+            database.forEach(r => {
                 tbody.innerHTML += `
                     <tr class="hover:bg-slate-800/50">
-                        <td class="p-2" title="Gravado em: ${r.DataRegistro || '-'}">${formatDisplayDate(r.Data)}</td>
-                        <td class="p-2 font-bold ${r.Tipo === 'Consumo' ? 'text-sky-400' : (r.Tipo === 'Entrada' ? 'text-emerald-400' : 'text-amber-400')}">${r.Tipo || '-'}</td>
+                        <td class="p-2">${formatDisplayDate(r.Data)}</td>
+                        <td class="p-2 font-bold text-sky-400">${r.Tipo || '-'}</td>
                         <td class="p-2">${r.LocalPrincipal || '-'}</td>
-                        <td class="p-2 text-slate-400">${r.LocalDetalhe || '-'}</td>
+                        <td class="p-2">${r.LocalDetalhe || '-'}</td>
                         <td class="p-2 text-center font-black">${r.Quantidade || 0}</td>
-                        <td class="p-2 text-center">${compBtn}</td>
-                        <td class="p-2">
-                            <span class="inline-flex items-center gap-1 bg-slate-900 text-slate-200 px-2 py-0.5 rounded-full text-[10px] font-bold border border-slate-800">
-                                <i class="fa-solid fa-user-check text-sky-400 text-[9px]"></i> ${userName}
-                            </span>
-                        </td>
-                        <td class="p-2 text-center"><button onclick="deleteRecord(${idx})" class="text-rose-400 hover:text-rose-300 font-bold transition p-1"><i class="fa-solid fa-trash"></i></button></td>
                     </tr>
                 `;
             });
         }
 
-        function openConfigModal() {
-            if (!currentUser || currentUser.role !== 'ADM') {
-                showToast('Acesso restrito ao Administrador.', 'error');
-                return;
-            }
-            document.getElementById('cfg-efetivo').value = systemConfig.efetivo;
-            document.getElementById('cfg-meta').value = systemConfig.meta;
-            document.getElementById('cfg-volume').value = systemConfig.volumeGalao;
-            renderConfigDynamicFields();
-            document.getElementById('modal-config').classList.remove('hidden');
-        }
-
-        function closeConfigModal() {
-            document.getElementById('modal-config').classList.add('hidden');
-        }
+        function openConfigModal() { document.getElementById('modal-config').classList.remove('hidden'); }
+        function closeConfigModal() { document.getElementById('modal-config').classList.add('hidden'); }
 
         function saveConfigParameters() {
-            systemConfig.efetivo = parseInt(document.getElementById('cfg-efetivo').value) || 500;
-            systemConfig.meta = parseFloat(document.getElementById('cfg-meta').value) || 2.7;
-            systemConfig.volumeGalao = parseInt(document.getElementById('cfg-volume').value) || 20;
-
-            mainLocations.forEach(loc => {
-                const iniInput = document.getElementById(`cfg-ini-${loc}`);
-                const iniVazInput = document.getElementById(`cfg-inivaz-${loc}`);
-                const minInput = document.getElementById(`cfg-min-${loc}`);
-                if (iniInput) systemConfig.estoqueInicial[loc] = parseInt(iniInput.value) || 0;
-                if (iniVazInput) systemConfig.estoqueInicialVazios[loc] = parseInt(iniVazInput.value) || 0;
-                if (minInput) systemConfig.estoqueMinimo[loc] = parseInt(minInput.value) || 200;
-            });
-
-            const fullConfig = {
-                systemConfig,
-                mainLocations,
-                tiposLancamento,
-                subLocationsMap,
-                USERS_DB
-            };
-
-            localStorage.setItem('controle_agua_config', JSON.stringify(fullConfig));
+            localStorage.setItem('controle_agua_config', JSON.stringify({ systemConfig, mainLocations, tiposLancamento, subLocationsMap }));
             closeConfigModal();
             updateAllSelectsUI();
             updateStockUI();
             updateDashboard();
-            showToast('Configurações salvas com sucesso!', 'success');
         }
 
         function executeResetCache() {
-            showConfirmDialog('Deseja limpar o cache local e recarregar dados do Google Sheets?', () => {
-                localStorage.clear();
-                database = [];
-                closeConfigModal();
-                loadDataFromSheet();
-                showToast('Cache limpo e dados recarregados!', 'info');
-            });
+            localStorage.clear();
+            database = [];
+            location.reload();
         }
 
-        function openExportModal(preferredType = null) {
-            if (!currentUser || currentUser.role !== 'ADM') {
-                showToast('Acesso restrito ao Administrador.', 'error');
-                return;
-            }
-
-            const today = new Date().toISOString().split('T')[0];
-            const firstDayOfMonth = new Date(new Date().getFullYear(), new Date().getMonth(), 1).toISOString().split('T')[0];
-
-            const expStartEl = document.getElementById('export-date-start');
-            const expEndEl = document.getElementById('export-date-end');
-            if (expStartEl && !expStartEl.value) expStartEl.value = firstDayOfMonth;
-            if (expEndEl && !expEndEl.value) expEndEl.value = today;
-
-            updateExportPreviewCount();
-            const modal = document.getElementById('modal-export');
-            if (modal) modal.classList.remove('hidden');
-        }
-
-        function closeExportModal() {
-            const modal = document.getElementById('modal-export');
-            if (modal) modal.classList.add('hidden');
-        }
-
-        function toggleExportPeriodInputs() {
-            const byDateCheckbox = document.getElementById('export-filter-by-date');
-            const container = document.getElementById('export-dates-container');
-            if (container && byDateCheckbox) {
-                if (byDateCheckbox.checked) {
-                    container.classList.remove('opacity-40', 'pointer-events-none');
-                } else {
-                    container.classList.add('opacity-40', 'pointer-events-none');
-                }
-            }
-            updateExportPreviewCount();
-        }
-
-        function getFilteredExportData() {
-            const byDate = document.getElementById('export-filter-by-date')?.checked ?? true;
-            const startDate = document.getElementById('export-date-start')?.value || '';
-            const endDate = document.getElementById('export-date-end')?.value || '';
-            const filterLoc = document.getElementById('export-filter-local')?.value || 'Todos';
-            const filterTipo = document.getElementById('export-filter-tipo')?.value || 'Todos';
-
-            return database.filter(r => {
-                if (!r) return false;
-
-                if (byDate && (startDate || endDate)) {
-                    const normDate = normalizeDate(r.Data);
-                    if (startDate && normDate < startDate) return false;
-                    if (endDate && normDate > endDate) return false;
-                }
-
-                if (filterLoc !== 'Todos') {
-                    const rawLoc = (r.LocalPrincipal || '').trim().toLowerCase();
-                    if (rawLoc !== filterLoc.trim().toLowerCase()) return false;
-                }
-
-                if (filterTipo !== 'Todos') {
-                    const rawTipo = (r.Tipo || '').trim().toLowerCase();
-                    if (rawTipo !== filterTipo.trim().toLowerCase()) return false;
-                }
-
-                return true;
-            });
-        }
-
-        function updateExportPreviewCount() {
-            const countBadge = document.getElementById('export-records-count');
-            if (!countBadge) return;
-            const filtered = getFilteredExportData();
-            countBadge.innerText = filtered.length;
-        }
-
-        function executeFilteredExport(format = 'excel') {
-            if (!currentUser || currentUser.role !== 'ADM') {
-                showToast('Acesso restrito.', 'error');
-                return;
-            }
-
-            const filteredData = getFilteredExportData();
-
-            if (filteredData.length === 0) {
-                showToast('Nenhum registro encontrado para os filtros selecionados.', 'error');
-                return;
-            }
-
-            const exportRows = filteredData.map(r => ({
-                'Data Registro': r.DataRegistro || '-',
-                'Data Lançamento': formatDisplayDate(r.Data),
-                'Tipo': r.Tipo || '-',
-                'Local Principal': r.LocalPrincipal || '-',
-                'Local Detalhe': r.LocalDetalhe || '-',
-                'Quantidade (Galões)': Number(r.Quantidade) || 0,
-                'Comprovante Anexado': r.Comprovante ? 'Sim' : 'Não',
-                'Observação': r.Observacao || '-',
-                'Usuário': r.Usuario || '-'
-            }));
-
-            const byDate = document.getElementById('export-filter-by-date')?.checked;
-            const startDate = document.getElementById('export-date-start')?.value;
-            const endDate = document.getElementById('export-date-end')?.value;
-
-            let fileNameSuffix = 'Historico_Completo';
-            if (byDate && startDate && endDate) {
-                fileNameSuffix = `${startDate}_a_${endDate}`;
-            }
-
-            if (format === 'excel') {
-                const ws = XLSX.utils.json_to_sheet(exportRows);
-                const wb = XLSX.utils.book_new();
-                XLSX.utils.book_append_sheet(wb, ws, "Lancamentos");
-                XLSX.writeFile(wb, `Relatorio_Agua_${fileNameSuffix}.xlsx`);
-                showToast(`Relatório Excel baixado (${exportRows.length} registros)!`, 'success');
-            } else {
-                const ws = XLSX.utils.json_to_sheet(exportRows);
-                const csv = XLSX.utils.sheet_to_csv(ws);
-                const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-                const link = document.createElement("a");
-                link.href = URL.createObjectURL(blob);
-                link.setAttribute("download", `Relatorio_Agua_${fileNameSuffix}.csv`);
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-                showToast(`Relatório CSV baixado (${exportRows.length} registros)!`, 'success');
-            }
-
-            closeExportModal();
-        }
-
-        function exportToExcel() { openExportModal('excel'); }
-        function exportToCSV() { openExportModal('csv'); }
-
-        function promptDevAccess() {
-            const modal = document.getElementById('modal-master-auth');
-            const passInput = document.getElementById('input-master-pass');
-            const errorEl = document.getElementById('master-auth-error');
-            if (modal) {
-                if (passInput) passInput.value = '';
-                if (errorEl) errorEl.classList.add('hidden');
-                modal.classList.remove('hidden');
-                setTimeout(() => passInput && passInput.focus(), 100);
-            }
-        }
-
-        function closeMasterAuthModal() {
-            const modal = document.getElementById('modal-master-auth');
-            if (modal) modal.classList.add('hidden');
-        }
+        function promptDevAccess() { document.getElementById('modal-master-auth').classList.remove('hidden'); }
+        function closeMasterAuthModal() { document.getElementById('modal-master-auth').classList.add('hidden'); }
 
         function verifyMasterPassword(e) {
             if (e) e.preventDefault();
-            const passInput = document.getElementById('input-master-pass');
-            const errorEl = document.getElementById('master-auth-error');
-            if (!passInput) return;
-
-            const entered = passInput.value.trim();
-            const correctPass = getMasterPass();
-
-            if (entered === correctPass) {
+            if (document.getElementById('input-master-pass').value.trim() === getMasterPass()) {
                 closeMasterAuthModal();
                 openDevModal();
-            } else {
-                if (errorEl) errorEl.classList.remove('hidden');
-                showToast('Senha Mestra incorreta!', 'error');
-            }
+            } else showToast('Senha Mestra incorreta!', 'error');
         }
 
-        function openDevModal() {
-            const modal = document.getElementById('modal-dev-panel');
-            if (!modal) return;
+        function openDevModal() { document.getElementById('modal-dev-panel').classList.remove('hidden'); }
+        function closeDevModal() { document.getElementById('modal-dev-panel').classList.add('hidden'); }
 
-            updateDevDiagnostics();
-            const urlInput = document.getElementById('dev-input-script-url');
-            if (urlInput) urlInput.value = getActiveScriptUrl();
-
-            modal.classList.remove('hidden');
-        }
-
-        function closeDevModal() {
-            const modal = document.getElementById('modal-dev-panel');
-            if (modal) modal.classList.add('hidden');
-        }
-
-        function updateDevDiagnostics() {
-            const diagNet = document.getElementById('dev-diag-network');
-            const diagRec = document.getElementById('dev-diag-records');
-            const diagPend = document.getElementById('dev-diag-pending');
-            const diagStorage = document.getElementById('dev-diag-storage');
-
-            if (diagNet) {
-                diagNet.innerHTML = navigator.onLine 
-                    ? '<i class="fa-solid fa-circle text-[8px] text-emerald-400"></i> <span class="text-emerald-400">Online</span>'
-                    : '<i class="fa-solid fa-circle text-[8px] text-red-500"></i> <span class="text-red-400">Offline</span>';
-            }
-            if (diagRec) diagRec.innerText = `${database.length} registros`;
-            if (diagPend) diagPend.innerText = `${pendingQueue.length} pendentes`;
-
-            if (diagStorage) {
-                let totalBytes = 0;
-                for (let key in localStorage) {
-                    if (localStorage.hasOwnProperty(key)) {
-                        totalBytes += (localStorage[key].length + key.length) * 2;
-                    }
-                }
-                const kb = (totalBytes / 1024).toFixed(1);
-                diagStorage.innerText = `${kb} KB`;
-            }
-        }
-
-        async function testApiPing() {
-            const resultEl = document.getElementById('dev-ping-result');
-            const btn = document.getElementById('btn-ping-test');
-            const url = document.getElementById('dev-input-script-url').value.trim() || getActiveScriptUrl();
-
-            if (!url) {
-                if (resultEl) resultEl.innerText = 'URL vazia!';
-                return;
-            }
-
-            if (btn) btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Testando...';
-            if (resultEl) resultEl.innerHTML = '<span class="text-sky-400">Verificando latência com o Google Sheets...</span>';
-
-            const startTime = performance.now();
-            try {
-                const testUrl = `${url}${url.includes('?') ? '&' : '?'}t=${Date.now()}`;
-                const res = await fetch(testUrl, { cache: 'no-store' });
-                const endTime = performance.now();
-                const latency = Math.round(endTime - startTime);
-
-                if (res.ok) {
-                    if (resultEl) resultEl.innerHTML = `<span class="text-emerald-400 font-bold"><i class="fa-solid fa-check"></i> Conectado com sucesso (${latency}ms)</span>`;
-                    showToast(`API conectada em ${latency}ms!`, 'success');
-                } else {
-                    if (resultEl) resultEl.innerHTML = `<span class="text-amber-400 font-bold">Resposta HTTP ${res.status} (${latency}ms)</span>`;
-                }
-            } catch (err) {
-                if (resultEl) resultEl.innerHTML = `<span class="text-red-400 font-bold"><i class="fa-solid fa-xmark"></i> Falha na conexão ou CORS restrito.</span>`;
-                showToast('Falha ao conectar com o script!', 'error');
-            } finally {
-                if (btn) btn.innerHTML = '<i class="fa-solid fa-network-wired"></i> Testar Ping';
-            }
-        }
-
-        function saveDevScriptUrl() {
-            const input = document.getElementById('dev-input-script-url');
-            if (!input) return;
-            const newUrl = input.value.trim();
-
-            if (!newUrl) {
-                showToast('A URL não pode ficar em branco.', 'error');
-                return;
-            }
-
-            localStorage.setItem('controle_agua_api_url', newUrl);
-            showToast('Endpoint do Google Sheets atualizado com sucesso!', 'success');
-            loadDataFromSheet(true);
-        }
-
-        function resetDevScriptUrl() {
-            showConfirmDialog('Restaurar para a URL padrão original do script?', () => {
-                localStorage.removeItem('controle_agua_api_url');
-                const input = document.getElementById('dev-input-script-url');
-                if (input) input.value = DEFAULT_SCRIPT_URL;
-                showToast('URL restaurada para o padrão!', 'info');
-                loadDataFromSheet(true);
-            });
-        }
-
-        function exportSystemBackupJson() {
-            const backupData = {
-                exportedAt: new Date().toISOString(),
-                exportedBy: currentUser ? currentUser.name : 'SuperAdmin',
-                systemConfig,
-                mainLocations,
-                tiposLancamento,
-                subLocationsMap,
-                users: USERS_DB,
-                records: database,
-                pendingQueue
-            };
-
-            const jsonStr = JSON.stringify(backupData, null, 2);
-            const blob = new Blob([jsonStr], { type: 'application/json' });
-            const link = document.createElement('a');
-            link.href = URL.createObjectURL(blob);
-            const dateStr = new Date().toISOString().split('T')[0];
-            link.download = `OUD_PRIME_Backup_Total_${dateStr}.json`;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            showToast('Backup total baixado com sucesso!', 'success');
-        }
-
-        function importSystemBackupJson(event) {
-            const file = event.target.files[0];
-            if (!file) return;
-
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                try {
-                    const parsed = JSON.parse(e.target.result);
-                    if (!parsed || typeof parsed !== 'object') {
-                        throw new Error('Arquivo de backup inválido.');
-                    }
-
-                    showConfirmDialog('Restaurar este backup? Os dados locais atuais serão substituídos.', () => {
-                        if (parsed.records && Array.isArray(parsed.records)) {
-                            database = parsed.records;
-                            localStorage.setItem('controle_agua_db', JSON.stringify(database));
-                        }
-                        if (parsed.users && typeof parsed.users === 'object') {
-                            USERS_DB = { ...BASE_USERS, ...parsed.users };
-                            localStorage.setItem('controle_agua_users', JSON.stringify(USERS_DB));
-                        }
-                        if (parsed.systemConfig) systemConfig = parsed.systemConfig;
-                        if (parsed.mainLocations) mainLocations = parsed.mainLocations;
-                        if (parsed.tiposLancamento) tiposLancamento = parsed.tiposLancamento;
-                        if (parsed.subLocationsMap) subLocationsMap = parsed.subLocationsMap;
-
-                        const fullConfig = { systemConfig, mainLocations, tiposLancamento, subLocationsMap, USERS_DB };
-                        localStorage.setItem('controle_agua_config', JSON.stringify(fullConfig));
-
-                        updateAllSelectsUI();
-                        updateStockUI();
-                        updateDashboard();
-                        renderRecentTable();
-                        updateDevDiagnostics();
-                        showToast('Backup restaurado com sucesso!', 'success');
-                    });
-                } catch (err) {
-                    showToast('Erro ao ler arquivo de backup: ' + err.message, 'error');
-                }
-            };
-            reader.readAsText(file);
-            event.target.value = '';
-        }
-
-        function updateMasterPassword() {
-            const input = document.getElementById('dev-new-master-pass');
-            if (!input) return;
-            const newPass = input.value.trim();
-
-            if (!newPass || newPass.length < 4) {
-                showToast('A senha mestra deve conter ao menos 4 caracteres.', 'error');
-                return;
-            }
-
-            localStorage.setItem('controle_agua_master_pass', newPass);
-            input.value = '';
-            showToast('Senha Mestra atualizada com sucesso!', 'success');
-        }
-
-        function forceSyncPendingQueue() {
-            if (pendingQueue.length === 0) {
-                showToast('Não há lançamentos pendentes na fila.', 'info');
-                return;
-            }
-            showToast('Iniciando transmissão forçada...', 'info');
-            syncPendingQueue();
-            setTimeout(updateDevDiagnostics, 1500);
-        }
-
-        function executeDevHardReset() {
-            showConfirmDialog('ATENÇÃO: Isso limpará toda a memória local (cache, sessões, fila e configurações). Deseja continuar?', () => {
-                localStorage.clear();
-                showToast('Hard Reset executado. O sistema será recarregado.', 'info');
-                setTimeout(() => location.reload(), 1200);
+        function renderUsersTable() {
+            const tbody = document.getElementById('users-table-body');
+            tbody.innerHTML = '';
+            Object.keys(USERS_DB).forEach(key => {
+                const u = USERS_DB[key];
+                tbody.innerHTML += `
+                    <tr>
+                        <td class="p-1.5 font-bold">${u.name}</td>
+                        <td class="p-1.5">${key}</td>
+                        <td class="p-1.5 text-center">${u.role}</td>
+                    </tr>
+                `;
             });
         }
     </script>
